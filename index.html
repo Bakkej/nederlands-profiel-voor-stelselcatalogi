@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.3.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -2130,7 +2129,7 @@ graph ex:ex-Documenten {
 Hiervoor kunnen IRI's of blanknodes gebruikt worden. Wanneer de bron op vindbaar is op het web kan foaf:page (url) gebruikt worden om naar deze vindplaats te verwijzen. Wanneer de bron niet op het web vindbaar is, kan dct:bibliographicCitation gebruikt worden om citeerinformatie vast te leggen. Het kan zijn dat een bron zowel een url als een citaat kent.</p>
 <p>De waarde van foaf:page is een IRI.</p>
 <p>De waarde van dct:bibliographicResource is een literal.</p>
-<p>In deze gevallen is het verplicht om middels rdf:label de naam van de resource aan te geven. Het wordt aangeraden om een omschrijving te geven van de bron.</p>
+<p>In deze gevallen is het verplicht om middels rdfs:label de naam van de resource aan te geven. Het wordt aangeraden om een omschrijving te geven van de bron.</p>
 <p>Voorbeeld:</p>
 <pre><code aria-busy="false" class="hljs css">...
 graph:pldn-begrippen {
@@ -2514,7 +2513,7 @@ graph:pldn-begrippen {
 </tr>
 <tr>
 <td>Definitie</td>
-<td>Concepts are the units  of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems.</td>
+<td>Concepts are the units of thought —ideas, meanings, or (categories of) objects and events— which underlie many knowledge organization systems.</td>
 </tr>
 <tr>
 <td>Toelichting</td>
@@ -2571,6 +2570,22 @@ graph:pldn-begrippen {
 <tr>
 <td>Toelichting</td>
 <td>A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure).</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>voorbeeld<div style="width:325px"></div></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Voorkeursterm</td>
+<td>example</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>An example of the use of a concept.</td>
 </tr>
 </tbody></table>
 <table>
@@ -2778,7 +2793,7 @@ graph:pldn-begrippen {
 </tr>
 <tr>
 <td>Definitie</td>
-<td>Notitie over een wijziging aan het concept.</td>
+<td>A note about a modification to a concept.</td>
 </tr>
 </tbody></table>
 <table>
