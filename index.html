@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.3.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,26 +24,7 @@ dfn{cursor:pointer}
 </style>
   
   
-<style>
-
-    table {
-      padding: 15px;
-    }
-
-    th {
-      border-bottom: 3px solid #ddd;
-    }
-
-    th,
-    td {
-      border-bottom: 1px solid #ddd;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-  
-</style>
+<link rel="stylesheet" type="text/css" href="./respec/media/style.css">
   
   
   
@@ -133,7 +113,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <script id="initialUserConfig" type="application/json">{
   "latestVersion": "https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi",
   "group": "webapps",
+  "xref": "web-platform",
   "specStatus": "unofficial",
+  "maxTocLevel": 3,
   "editors": [
     {
       "name": "Arjen Santema"
@@ -177,7 +159,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "name": "Hans Overbeek (KOOP)"
     },
     {
-      "name": "Rik Opgenoort (CROW)"
+      "name": "Rik (CROW)"
     },
     {
       "name": "Viyanti Ramdhiansing (Kennisnet)"
@@ -199,22 +181,43 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "branch": "main",
     "repoURL": "pldn/nederlands-profiel-voor-stelselcatalogi"
   },
-  "xref": "web-platform",
-  "maxTocLevel": 3,
-  "publishISODate": "2022-10-28T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 28 oktober 2022"
+  "localBiblio": {
+    "NLAPI": {
+      "title": "API Strategie Algemeen (Nederlandse API Strategie I)",
+      "href": "https://docs.geostandaarden.nl/api/API-Strategie/",
+      "status": "Vastgesteld",
+      "date": "09 maart 2022",
+      "publisher": "Geonovum"
+    },
+    "B1": {
+      "title": "Taalniveau B1",
+      "href": "https://www.communicatierijk.nl/vakkennis/rijkswebsites/aanbevolen-richtlijnen/taalniveau-b1"
+    },
+    "PTOLULijst": {
+      "title": "Pas-Toe-Of-Leg-Uit lijst van open standaarden",
+      "href": "https://www.forumstandaardisatie.nl/open-standaarden/verplicht",
+      "publisher": "Forum Standaardisatie"
+    },
+    "PTOLU": {
+      "title": "pas-toe-of-leg-uit",
+      "href": "https://www.forumstandaardisatie.nl/node/229",
+      "publisher": "Forum Standaardisatie"
+    }
+  },
+  "publishISODate": "2022-10-31T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 31 oktober 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
 
 <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands Profiel voor Begrippencatalogi</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-10-28">28 oktober 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-10-31">31 oktober 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221028/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221028/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221031/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221031/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi">https://pldn.github.io/nederlands-profiel-voor-stelselcatalogi</a>
@@ -257,7 +260,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Hans Overbeek (KOOP)</span>
   </dd><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Rik Opgenoort (CROW)</span>
+    <span class="p-name fn">Rik (CROW)</span>
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Viyanti Ramdhiansing (Kennisnet)</span>
   </dd><dd class="editor p-author h-card vcard">
@@ -653,7 +656,7 @@ ex2:Land a skos:Concept
 <p>Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse sets van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. In deze zin commiteer je volledig aan de beschrijving van het begrip uit een ander begrippenkader. Dit is afgebeeld in het volgende diagram.
 
       </p><figure id="fig-datastructuren-hergebruik-en-harmonisatie">
-        <img src="respec/afbeeldingen/hergebruik.png" alt="" height="561" width="791">
+        <img src="respec/media/hergebruik.png" alt="" height="561" width="791">
         <figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Datastructuren hergebruik en harmonisatie</span></figcaption>
       </figure>
     <p></p>
@@ -2107,7 +2110,7 @@ Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesb
 <p>De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf daarvan.</p>
 </div>
       <section data-format="markdown" id="bron"><div class="header-wrapper"><h3 id="x7-1-bron"><bdi class="secno">7.1 </bdi>Bron</h3><a class="self-link" href="#bron" aria-label="Permalink for Section 7.1"></a></div>
-<p>Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron. De bron kan een heel document of een fragment daarvan zijn, denk aan een Boek, een hoofdstuk of een paragraaf.</p>
+<p>Een begrip kan zijn ontleend aan een op het web vindbare bron. Dit kan een (versie van) een bepaald werk zijn of een ander documentair iets waarin een beschrijving van het begrip is te vinden. Bronnen kunnen wel of niet beschreven zijn in RDF. Ook kan een begrip ontleend zijn aan een niet op het web vindbare bron.</p>
 <p>In ieder scenario willen we voldoende informatie hebben over de bron zodat we deze kunnen vinden. Dit doen we op basis van een IRI, url of citaat.</p>
 <p>Wanneer een bron als linked data op het web ontsloten is neem je als waarde van dct:source de IRI van de bron. Dit kan bijvoorbeeld een instance van foaf:Document of dct:BibliographicResource zijn. Hoe deze precies beschreven is maakt voor de bronverwijzing niet uit.</p>
 <p>Voorbeeld:</p>
@@ -2134,7 +2137,7 @@ graph:pldn-begrippen {
                               dct:description <span class="hljs-string">"In deze wet wordt verstaan onder ingezetenen: zij die hun werkelijke woonplaats in de gemeente hebben."</span>@nl ] ;
     .
     pldn:Begrip-<span class="hljs-number">3</span> dct:source [ rdfs:label <span class="hljs-string">"Heukels' Flora van Nederland"</span>@nl ;
-                                dct:bibliographicCitation <span class="hljs-string">"Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp."</span> ] ;
+                               dct:bibliographicCitation <span class="hljs-string">"Van der Meijden, R. (2005): Heukels' Flora van Nederland. Wolters-Noordhoff, Groningen/Houten (23e druk), 685 pp."</span> ] ;
     .
 }
 </code></pre>
