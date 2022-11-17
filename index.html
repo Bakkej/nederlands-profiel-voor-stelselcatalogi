@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.3.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -252,20 +251,20 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "id": "wettennl"
     }
   },
-  "publishISODate": "2022-11-16T00:00:00.000Z",
-  "generatedSubtitle": "Unofficial Draft 16 november 2022"
+  "publishISODate": "2022-11-17T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 17 november 2022"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-UD"></head>
 
 <body class="h-entry" data-cite="HTML INFRA URL WEBIDL DOM FETCH"><div class="head">
     
     <h1 id="title" class="title">Nederlands Profiel voor Begrippencatalogi</h1> 
-    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-11-16">16 november 2022</time></p>
+    <p id="w3c-state">Unofficial Draft <time class="dt-published" datetime="2022-11-17">17 november 2022</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>Deze versie:</dt><dd>
-                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221116/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221116/</a>
+                <a class="u-url" href="https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221117/">https://www.w3.org/TR/unofficial-nederlands-profiel-voor-stelselcatalogi-20221117/</a>
               </dd>
         <dt>Laatst gepubliceerde versie:</dt><dd>
                 <a href="https://profielstelselcatalogus.pldn.nl/">https://profielstelselcatalogus.pldn.nl/</a>
@@ -529,7 +528,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: MIM</span></div><p class="">Nog toevoegen -&gt; dit model is ook in MIM beschreven... <br>todo transformatie SHACL -&gt; MIM : https://docs.geostandaarden.nl/mim/mim/#transformatie-vanuit-rdfs-owl-shacl</p></div>
 
 <section id="begrip"><div class="header-wrapper"><h3 id="x2-1-begrip"><bdi class="secno">2.1 </bdi>Begrip</h3><a class="self-link" href="#begrip" aria-label="Permalink for Section 2.1"></a></div>
-<p>Een begrip is het centrale element in deze specificatie. Een begrip is een conceptele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over bedoeling (betekenis); ofwel de gedachte.</p>
+<p>Een begrip is het centrale element in deze specificatie. Een begrip is een conceptuele resource; het zijn de eenheden van denken - ideeën, betekenissen of (categorieën van) objecten en gebeurtenissen. Zo bestaan of ontstaan begrippen dus in ons hoofd als abstracte entiteiten. In communicatie spelen begrippen een belangrijke rol. In de communicatiewetenschap wordt hier gerefereerd aan de 'Triange of meaning'. Hierin staat een spreker centraal die iets conceptualiseert en daaraan refereert met een bepaalde term (of symbool) met de hoop dat de toehoorder dezelfde conceptualisatie maakt op basis van de gebruikte term zodat hij begrijpt wat de spreker bedoelt. In het onderstaande figuur is deze driehoek afgebeeld en gaat het begrip dus over de bedoeling (betekenis); ofwel de gedachte.</p>
 <p>
       </p><figure id="fig-triange-of-meaning">
         <img src="https://github.com/bp4mc2/bp4mc2/blob/master/site/image-ch3-1.png?raw=true" alt="">
@@ -562,7 +561,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </tbody></table>
 <p><em>in de thesaurus.ttl zijn de kenmerken nu via skos:related aan een begrip gekoppeld. Wellicht moet dit andersom: ieder kermerk relateren aan een begrip</em></p>
 <section id="glossary"><div class="header-wrapper"><h4 id="x2-1-1-glossary"><bdi class="secno">2.1.1 </bdi>Glossary</h4><a class="self-link" href="#glossary" aria-label="Permalink for Section 2.1.1"></a></div>
-<p>Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden. Door deze basis vast te leggen krijgen we feitelijk een glossary. Dit is de basis voor de beschrijving van begrippen in een bepaald domein. </p>
+<p>Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden.</p>
+<p>Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-1">begrippenkader</a>. In dit stadium spreken we van een glossary. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. </p>
 <p>Een glossary is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een glossary kent voor ieder begrip dan ook mimimaal één term en één notitie, repectievelijk een <a data-link-type="dfn" href="#dfn-voorkeursterm" class="internalDFN" id="ref-for-dfn-voorkeursterm-2">voorkeursterm</a> en een <a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-2">definitie</a>. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.</p>
 <div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span><span class="issue-label">: Tabellen moeten opnieuw gegenereert worden wanneer de teksten in thesaurus.ttl naar wens zijn</span></div><p class=""> In het geval van glossary kunnen de 'requirements' die hierboven genoemd zijn wellicht verplaatst worden naar een scopenote oid.<br>
 Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
@@ -919,7 +919,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 <li>is categorie van</li>
 </ul>
 </section><section id="harmonisatiesrelaties"><div class="header-wrapper"><h4 id="x2-1-4-harmonisatiesrelaties"><bdi class="secno">2.1.4 </bdi>Harmonisatiesrelaties</h4><a class="self-link" href="#harmonisatiesrelaties" aria-label="Permalink for Section 2.1.4"></a></div>
-<p>Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. 
+<p>Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. Hiervoor gebruiken we mappingrelaties.
 <em>per element een tabel met prefLabel, definition, scopeNotes, bronnen</em></p>
 <ul>
 <li>exact overeenkomstig</li>
@@ -941,10 +941,14 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </ul>
 <p>Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. <em>link</em></p>
 </section></section><section id="begrippenkader"><div class="header-wrapper"><h3 id="x2-2-begrippenkader"><bdi class="secno">2.2 </bdi>Begrippenkader</h3><a class="self-link" href="#begrippenkader" aria-label="Permalink for Section 2.2"></a></div>
+<p>Begrippen kunnen als zelfstandige entiteiten gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde vocabulaire, een begrippenkader. Een <dfn id="dfn-begrippenkader" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">begrippenkader</dfn> is een verzameling van begrippen. De volledige beschrijving van de begrippen wordt  gezien als onderdeel van het begrippenkader. Wanneer een begrip semantische relaties kent naar een ander begrip wordt het andere begrip ook als onderdeel van het vocabulaire, en dus het begrippenkader. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is het een open systeem. Dat wil zeggen dat net als dat een taal naast vertalingen (mappings) ook iets kent als leenwoorden. Zoals "computer" in de nederlandse taal wat afkomstig is uit de Engelse taal. De vertalingen tussen verschillende talen (begrippenkaders) zijn ook belangrijk om vast te leggen. Om vertalingen te beschrijven gebruiken we mappingrelaties. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader.</p>
+<p>Een verzameling van begripsbeschrijvingen is een Asset. Begrippenkader is een (federatief opgebouwde) Dataset -&gt; adms:Asset omdat het mogelijk samengesteld is uit verschillende verzameling begripsbeschrijvingen.</p>
 <p>Een samenhangende set van begrippen in een bepaald domein wordt beheerd als 1 samenhangend begrippenkader. Een begrippenkader kan de vorm van een glossary, taxonomie, thesaurus of thesaurus met extra semantiek hebben, waarbij deze vorm de manier waarop begrippen beschreven worden bepaald. Als eenheid van beheer heeft een begrippenkader allerlei eigen metadata.
 In het geval van een taxonomie of thesaurus heeft een begrippenkader altijd 1 of meerdere topconcepten.
 <em>tabel met de beschrijving van een begrippenkader met prefLabel, definition, scopeNotes, bronnen en metadata elementen in een begrippenkader</em></p>
-<p>topconcept</p>
+<ul>
+<li>topconcept</li>
+</ul>
 <section id="metadata-van-een-begrippenkader"><div class="header-wrapper"><h4 id="x2-2-1-metadata-van-een-begrippenkader"><bdi class="secno">2.2.1 </bdi>Metadata van een begrippenkader</h4><a class="self-link" href="#metadata-van-een-begrippenkader" aria-label="Permalink for Section 2.2.1"></a></div>
 <ul>
 <li>Voorkeursnaam begrippenkader</li>
@@ -1426,6 +1430,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </section></section><section id="specificatie"><div class="header-wrapper"><h3 id="x4-3-specificatie"><bdi class="secno">4.3 </bdi>Specificatie</h3><a class="self-link" href="#specificatie" aria-label="Permalink for Section 4.3"></a></div>
 <p>Met het conceptueel model en de taalbinding die daar aan toegevoegd is kunnen we een dataspecificatie opstellen. De specificatie zoals in de volgende secties beschreven is ook te vinden in de shapesgraph die gepubliceerd is onder <code><a href="http://pldn.nl/def/skosapnl#">http://pldn.nl/def/skosapnl#</a></code>.</p>
 <section id="specificatie-begrippenkader"><div class="header-wrapper"><h4 id="x4-3-1-specificatie-begrippenkader"><bdi class="secno">4.3.1 </bdi>Specificatie Begrippenkader</h4><a class="self-link" href="#specificatie-begrippenkader" aria-label="Permalink for Section 4.3.1"></a></div>
+<p>Het begrippenkader voor een bepaald domein wordt gerepresenteerd door een skos:ConceptScheme</p>
 <table>
 <thead>
 <tr>
@@ -1456,6 +1461,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tbody></table>
 <p><em>Iets over <strong>ALS</strong> begrippenkader <strong>EQUALS</strong> verzameling triples die samen de begripsbeschrijvingen van een set van begrippen vormt <strong>EQUALS</strong> dataset, oftwel een information asset, oftwel: een informatieobject <strong>DAN</strong> ADMS Asset -&gt; TOOI</em>. Dit terug laten komen in hfdt 2.2.</p>
 </section><section id="specificatie-begrip"><div class="header-wrapper"><h4 id="x4-3-2-specificatie-begrip"><bdi class="secno">4.3.2 </bdi>Specificatie Begrip</h4><a class="self-link" href="#specificatie-begrip" aria-label="Permalink for Section 4.3.2"></a></div>
+<p>Het begrip wordt gerepresenteerd door een skos:Concept</p>
 <table>
 <thead>
 <tr>
@@ -1623,6 +1629,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </tbody></table>
 </section><section id="specificatie-bronverwijzing"><div class="header-wrapper"><h4 id="x4-3-3-specificatie-bronverwijzing"><bdi class="secno">4.3.3 </bdi>Specificatie Bronverwijzing</h4><a class="self-link" href="#specificatie-bronverwijzing" aria-label="Permalink for Section 4.3.3"></a></div>
+<p>Het Bronverwijzing voor een bepaald domein wordt gerepresenteerd door een foaf:Document. </p>
 <table>
 <thead>
 <tr>
@@ -1664,6 +1671,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </tbody></table>
 </section><section id="specificatie-collectie"><div class="header-wrapper"><h4 id="x4-3-4-specificatie-collectie"><bdi class="secno">4.3.4 </bdi>Specificatie Collectie</h4><a class="self-link" href="#specificatie-collectie" aria-label="Permalink for Section 4.3.4"></a></div>
+<p>Een collectie wordt gerepresenteerd door een skos:Collection</p>
 <table>
 <thead>
 <tr>
@@ -1687,6 +1695,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </tbody></table>
 </section><section id="specificatie-geordendecollectie"><div class="header-wrapper"><h4 id="x4-3-5-specificatie-geordendecollectie"><bdi class="secno">4.3.5 </bdi>Specificatie GeordendeCollectie</h4><a class="self-link" href="#specificatie-geordendecollectie" aria-label="Permalink for Section 4.3.5"></a></div>
+<p>Het geordende collectie wordt gerepresenteerd door een skos:OrderedCollection</p>
 <table>
 <thead>
 <tr>
@@ -1832,6 +1841,8 @@ relatedMatch: overeenkomstig verwant</p>
     <li>
       <a class="index-term" href="#dfn-begrip">begrip</a> 
     <span class="print-only">§2.1</span></li><li>
+      <a class="index-term" href="#dfn-begrippenkader">begrippenkader</a> 
+    <span class="print-only">§2.2</span></li><li>
       <a class="index-term" href="#dfn-bron">bron</a> 
     <span class="print-only">§2.4</span></li><li>
       <a class="index-term" href="#dfn-citaat">citaat</a> 
@@ -2016,26 +2027,6 @@ relatedMatch: overeenkomstig verwant</p>
 <tr>
 <td>Definitie</td>
 <td>skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes.</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>begrippenlijst<div style="width:325px"></div></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Voorkeursterm</td>
-<td>controlled vocabulary</td>
-</tr>
-<tr>
-<td>Definitie</td>
-<td>A controlled vocabulary is a carefully selected list of words and phrases, which are used to tag units of information (document or work) so that they may be more easily retrieved by a search.</td>
-</tr>
-<tr>
-<td>Toelichting</td>
-<td>Controlled vocabularies provide a way to organize knowledge for subsequent retrieval. They are used in subject indexing schemes,subject headings,thesauri,taxonomies and other knowledge organization systems. Controlled vocabulary schemes mandate the use of predefined,authorised terms that have been preselected by the designers of the schemes,in contrast to natural language vocabularies,which have no such restriction.</td>
 </tr>
 </tbody></table>
 <table>
@@ -2654,6 +2645,26 @@ relatedMatch: overeenkomstig verwant</p>
 <td>The prime application for a thesaurus is in information retrieval, where the aim is to search for concepts. Concepts are represented by terms. Each term included in a thesaurus should represent a single concept (or unit of thought). Concepts can range from the simple (e.g. cats) to the very complex (e.g. racial discrimination among ethnic minorities). Compound terms or phrases are generally needed to express the more complex concepts.</td>
 </tr>
 </tbody></table>
+<table>
+<thead>
+<tr>
+<th>begrippenlijst<div style="width:325px"></div></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Voorkeursterm</td>
+<td>glossary</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>A glossary is a simple list of terms and definitions used to control terminology.</td>
+</tr>
+<tr>
+<td>Toelichting</td>
+<td>A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure).</td>
+</tr>
+</tbody></table>
 </section>
 
 
@@ -2756,6 +2767,18 @@ relatedMatch: overeenkomstig verwant</p>
       <ul>
     <li>
     <a href="#ref-for-dfn-polyhierarchy-1" title="§ 2.1.2 Taxonomie">§ 2.1.2 Taxonomie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-begrippenkader" aria-label="Links in this document to definition: begrippenkader">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-begrippenkader" aria-label="Permalink for definition: begrippenkader. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-begrippenkader-1" title="§ 2.1.1 Glossary">§ 2.1.1 Glossary</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bron" aria-label="Links in this document to definition: bron">
