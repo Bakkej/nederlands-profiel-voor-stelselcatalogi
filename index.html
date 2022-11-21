@@ -1,5 +1,4 @@
 <!DOCTYPE html><html lang="nl"><head>
-<script src="https://hypothes.is/embed.js" async></script>
 <meta charset="utf-8">
 <meta name="generator" content="ReSpec 32.3.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -193,7 +192,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       "name": "Pano Maria (Skemu)"
     },
     {
-      "name": "Rik Opgenoort (CROW)"
+      "name": "Rik (CROW)"
     },
     {
       "name": "Hans Overbeek (KOOP)"
@@ -271,6 +270,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       ],
       "id": "vocab-adms-asset",
       "date": "1 August 2013"
+    },
+    "lint": {
+      "no-unused-dfns": false
     }
   },
   "publishISODate": "2022-11-21T00:00:00.000Z",
@@ -329,7 +331,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Pano Maria (Skemu)</span>
   </dd><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Rik Opgenoort (CROW)</span>
+    <span class="p-name fn">Rik (CROW)</span>
   </dd><dd class="editor p-author h-card vcard">
     <span class="p-name fn">Hans Overbeek (KOOP)</span>
   </dd><dd class="editor p-author h-card vcard">
@@ -537,8 +539,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <p>Hoofdstuk 3 - applicatieprofiel beschrijft de taalbinding van het profiel naar bestaande W3C standaarden. Dit deel is bedoeld voor specialisten zoals taxonomen, analisten, informatiemodelleurs en -architecten en ook voor ontwikkelaars van ondersteunende tooling. Dit leidt tot een abstracte syntax van het profiel uitgedrukt in de [<cite><a class="bibref" data-link-type="biblio" href="#bib-shacl" title="Shapes Constraint Language (SHACL)">SHACL</a></cite>] standaard. Daarnaast geven we een taalbinding van deze abstracte syntax naar andere bestaande W3C standaarden, zoals SKOS en DublinCore. Voor de abstracte syntax gebruiken we URI's die uitgedrukt worden in de Engelse taal, om zo direct een internationale aansluiting te houden. De abstracte syntax zal daarnaast Nederlandse labels kennen die in de deze lopende (Nederlandstalige) tekst zal worden gebruikt. De meerwaarde van het gebruik van SHACL is dat deze praktische handvatten biedt bij het toepassen van deze bestaande standaarden, inclusief een validatiemogelijkheid. Door het geven van de taalbinding naar de andere W3C standaarden bieden we een profiel dat direct kan worden begrepen door de internationale (internet) gemeenschap. Specifiek voor de Nederlandse (overheids)situatie geldt dat we hierbij aansluiten op de standaarden zoals opgenomen op de <cite><a data-matched-text="[[[PTOLULijst]]]" href="https://www.forumstandaardisatie.nl/open-standaarden/verplicht" id="ref-for-index-term-pas-toe-of-leg-uit-lijst-van-open-standaarden-1">Pas-Toe-Of-Leg-Uit lijst van open standaarden</a></cite> van het Forum Standaardisatie.</p>
 </section></section>
   <section id="H2" data-format="markdown"><div class="header-wrapper"><h2 id="x2-conceptuele-beschrijving"><bdi class="secno">2. </bdi>Conceptuele beschrijving</h2><a class="self-link" href="#H2" aria-label="Permalink for Section 2."></a></div>
-<p>In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we begrippenkaders beschrijven en uitwisselen. Vervolgens wordt in <a href="#H3">hoofdstuk 3</a> beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964.</p>
-<p>In <a href="#begrip">2.1</a> beschrijven we wat een begrip is. Vervolgens beschrijven we in <a href="#begrippenlijst">2.1.1</a> de kenmerken van ene begrip die relevant zijn voor het basisniveau, een begrippenlijst. In <a href="#taxonomie">2.1.2</a> voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een taxonomie. In <a href="#thesaurus">2.1.3</a> voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible thesaurus te komen. In <a href="#harmonisatiesrelaties">2.1.4</a> beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader. In <a href="#nadere-typering-van-begrippen">2.1.5</a> beschrijven we skos-lex als voorbeeld van een verdergaande typering van begrippen waarmee nog meer semantiek wordt toegevoegd. </p>
+<p>In dit hoofdstuk beschrijven we het abstracte model dat we hanteren in het toepassingsgebied. Dit is onafhankelijk van bepaalde notaties en/of standaarden. Hiermee komen we tot een gedeeld beeld en gedeelde taal waarmee we <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-1">begrippenkader</a>s beschrijven en uitwisselen. Vervolgens wordt in <a href="#H3">hoofdstuk 3</a> beschreven hoe dit abstracte model kan worden toegepast in RDF. Dit zelfde abstracte model kan ook toegepast worden in bijvoorbeeld een JSON of XML schema zonder dat de gedeelde taal verloren gaat; waardoor deze standaard breder geadopteerd kan worden. Het abstracte model is gebasseerd op verschillende standaarden en best-practices die in het domein van toepassing zijn. Zoals bij de rationale aangegeven leunen we hier sterk op SKOS en op de ISO 25964.</p>
+<p>In <a href="#begrip">2.1</a> beschrijven we wat een begrip is. Vervolgens beschrijven we in <a href="#begrippenlijst">2.1.1</a> de kenmerken van ene begrip die relevant zijn voor het basisniveau, een <a data-link-type="dfn" href="#dfn-begrippenlijst" class="internalDFN" id="ref-for-dfn-begrippenlijst-1">begrippenlijst</a>. In <a href="#taxonomie">2.1.2</a> voegen we daar de hiërarchische relaties aan toe die een begrippenlijst uitbreiden tot een <a data-link-type="dfn" href="#dfn-taxonomie" class="internalDFN" id="ref-for-dfn-taxonomie-1">taxonomie</a>. In <a href="#thesaurus">2.1.3</a> voegen we meer genuanceerde hiërarchische relaties toe om tot een ISO compatible <a data-link-type="dfn" href="#dfn-thesaurus" class="internalDFN" id="ref-for-dfn-thesaurus-1">thesaurus</a> te komen. In <a href="#harmonisatiesrelaties">2.1.4</a> beschrijven we de harmonisatierelaties waarmee begrippen kunnen worden verbonden met begrippen in een ander begrippenkader. In <a href="#nadere-typering-van-begrippen">2.1.5</a> beschrijven we skos-lex als voorbeeld van een verdergaande typering van begrippen waarmee nog meer semantiek wordt toegevoegd. </p>
 <p>In <a href="#begrippenkader">2.2</a> beschrijven we wat een begrippenkader is en in <a href="#collectie">2.3</a> hoe begrippen los van hun semantische samenhang binnen een begrippenkader kunnen worden gegroepeerd in collecties.</p>
 <p>In <a href="#bron">2.4</a> beschrijven we de elementen van een bibliografische of op het web vindbare bron waarop de definitie van een begrip is gebaseerd.</p>
 <p>Het beschrijven van de  kenmerken van een begrip, <em>begrippenkader</em> of <em>collectie</em> doen we conform onze eigen standaard (practice what you preach). Dat betekent dat we voor ieder kenmerk van een begrip de volgende kenmerken beschrijven:</p>
@@ -585,8 +587,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </tbody></table>
 <section id="begrippenlijst"><div class="header-wrapper"><h4 id="x2-1-1-begrippenlijst"><bdi class="secno">2.1.1 </bdi>Begrippenlijst</h4><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 2.1.1"></a></div>
 <p>Aan de hand van de begripsdriehoek, zien we dat om een spreker te kunnen begrijpen, een toebehoorder minimaal iets moeten weten over de conceptualisatie en de termen die ter aanduiding gebruikt worden.</p>
-<p>Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-1">begrippenkader</a>. In dit stadium spreken we van een begrippenlijst. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. </p>
-<p>Een begrippenlijst is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één term en één notitie, repectievelijk een <a data-link-type="dfn" href="#dfn-voorkeursterm" class="internalDFN" id="ref-for-dfn-voorkeursterm-2">voorkeursterm</a> en een <a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-2">definitie</a>. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.</p>
+<p>Door deze basis voor alle begrippen die binnen een context gebruikt worden vast te leggen onstaat een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-2">begrippenkader</a>. In dit stadium spreken we van een begrippenlijst. Dit is de basisniveau voor de beschrijving van begrippen in een bepaald domein. </p>
+<p>Een begrippenlijst is een alfabetische termenlijst met definities die gebruikt worden in een bepaald domein. Een begrippenlijst kent voor ieder begrip dan ook mimimaal één <a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-1">term</a> en één <a data-link-type="dfn" href="#dfn-notitie" class="internalDFN" id="ref-for-dfn-notitie-1">notitie</a>, repectievelijk een <a data-link-type="dfn" href="#dfn-voorkeursterm" class="internalDFN" id="ref-for-dfn-voorkeursterm-2">voorkeursterm</a> en een <a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-2">definitie</a>. Een toelichting in de vorm van een scope afbakening is aanbevolen, evenals een verwijzing naar de bron van de definitie. Voor openbare glossaries is conform het algemene overheidsbeleid een uitleg in klare taal, op B1 niveau aanbevolen. De overige kenmerken zijn optioneel.</p>
 <div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span><span class="issue-label">: Tabellen moeten opnieuw gegenereert worden wanneer de teksten in thesaurus.ttl naar wens zijn</span></div><p class=""> In het geval van begrippenlijst kunnen de 'requirements' die hierboven genoemd zijn wellicht verplaatst worden naar een scopenote oid.<br>
 Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 
@@ -599,11 +601,11 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>begrippenlijst</td>
+<td><dfn id="dfn-begrippenlijst" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">begrippenlijst</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een begrippenlijst is een geselecteerde lijst van woorden en frasen, die worden gebruikt om eenheden van informatie (een document of werk) te indexeren zodat deze gemakkelijk kunnen worden gevonden.</td>
+<td>Een begrippenlijst is een alfabetische lijst van begrippen in een bepaald kennisdomein met de definities voor die begrippen.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
@@ -611,7 +613,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </tr>
 <tr>
 <td><strong>toelichting</strong></td>
-<td>Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkader schema's verplichten het gebruik van vooraf gedefinieerde,geautoriseerde termen die vooraf zijn geselecteerd door de ontwerpers van de schema's,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben.</td>
+<td>In de praktijk worden de termen begrippenlijst en woordenlijst vaak door elkaar gebruikt. Traditioneel verschijnt er aan het einde van een boek een verklarende woordenlijst met termen in dat boek die ofwel nieuw geïntroduceerd, ongebruikelijk of gespecialiseerd zijn. Semantisch gezien gaat de definitie over het begrip wat met de term wordt aangeduid en niet over de term zelf.</td>
 </tr>
 </tbody></table>
 <section id="termen"><div class="header-wrapper"><h5 id="x2-1-1-1-termen"><bdi class="secno">2.1.1.1 </bdi>Termen</h5><a class="self-link" href="#termen" aria-label="Permalink for Section 2.1.1.1"></a></div>
@@ -674,7 +676,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>alternatieve term</td>
+<td><dfn id="dfn-alternatieve-term" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">alternatieve term</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
@@ -685,8 +687,8 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 <td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>, <a href="https://www.w3.org/TR/skos-reference/#labels">https://www.w3.org/TR/skos-reference/#labels</a></td>
 </tr>
 <tr>
-<td><strong>uri</strong></td>
-<td><a href="http://pldn.nl/skosapnl/id/concept/AltLabel">http://pldn.nl/skosapnl/id/concept/AltLabel</a></td>
+<td><strong>toelichting</strong></td>
+<td>Afkortingen en hun volledige vormen kunnen als synoniemen worden behandeld.</td>
 </tr>
 </tbody></table>
 <table>
@@ -698,7 +700,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>zoekterm</td>
+<td><dfn id="dfn-zoekterm" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">zoekterm</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
@@ -720,7 +722,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>notitie</td>
+<td><dfn id="dfn-notitie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">notitie</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
@@ -765,7 +767,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>historische notitie</td>
+<td><dfn id="dfn-historische-notitie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">historische notitie</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
@@ -774,6 +776,10 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 <tr>
 <td><strong>bron</strong></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes">https://www.w3.org/TR/2009/REC-skos-reference-20090818/#notes</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Een historische notitie wordt gebruikt wanneer een nieuwe voorkeursterm wordt toegevoegd aan het begrippenkader of wanneer er een wijziging wordt aangebracht in een bestaande term die van invloed is op de reikwijdte van het concept in verschillende toepassingsperioden. Hoewel het mogelijk is om dergelijke informatie in de toelichting op te nemen, heeft een aparte hisotirsche notitie de voorkeur. Deze kan kan de datum van introductie vermelden, of het kan meer complexe informatie geven over hoe te zoeken naar het concept op een eerder of later tijdstip.</td>
 </tr>
 </tbody></table>
 <table>
@@ -785,7 +791,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>wijzigingsnotitie</td>
+<td><dfn id="dfn-wijzigingsnotitie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">wijzigingsnotitie</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
@@ -805,7 +811,7 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>redactionele opmerking</td>
+<td><dfn id="dfn-redactionele-opmerking" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">redactionele opmerking</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
@@ -829,11 +835,11 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>uitleg</td>
+<td><dfn id="dfn-uitleg" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">uitleg</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een uitleg van een begrip is een beschrijving van dit begrip in eenvoudige taal die zonder verdere context begrepen kan worden.</td>
+<td>Een uitleg is een beschrijving van een object in eenvoudige taal die zonder verdere context begrepen kan worden.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
@@ -853,11 +859,11 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>code</td>
+<td><dfn id="dfn-code" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">code</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een code voor een begrip is een tekenreeks ter aanduiding van precies één begrip uit een begrippenstelsel.</td>
+<td>Een code voor een begrip is een tekenreeks ter aanduiding van precies éénn begrip uit een begrippenkader.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
@@ -897,56 +903,425 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </thead>
 <tbody><tr>
 <td><strong>voorkeursterm</strong></td>
-<td>bron</td>
+<td><dfn id="dfn-voorbeeld" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">voorbeeld</dfn></td>
 </tr>
 <tr>
 <td><strong>definitie</strong></td>
-<td>Een bron voor een begrip is een gerelateerd brondocument waaruit de betekenis van het begrip is afgeleid.</td>
+<td>Een voorbeeld van het gebruik van een begrip.</td>
 </tr>
 <tr>
 <td><strong>bron</strong></td>
-<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>, <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source</a></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#notes">https://www.w3.org/TR/skos-reference/#notes</a></td>
 </tr>
 </tbody></table>
 </section></section><section id="taxonomie"><div class="header-wrapper"><h4 id="x2-1-2-taxonomie"><bdi class="secno">2.1.2 </bdi>Taxonomie</h4><a class="self-link" href="#taxonomie" aria-label="Permalink for Section 2.1.2"></a></div>
-<p>Iets over semantische relaties.</p>
-<p><em>tabel met de beschrijving van een semantische relatie met prefLabel, definition, scopeNotes, bronnen</em></p>
-<p>Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties. Deze hiërarchise relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal <em>is een</em> kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.</p>
-<p><em>tabel met de beschrijving van een thesaurus met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een taxonomie</em></p>
+<p>Naast documentaire eigenschappen zoals een <a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-3">definitie</a>, waar de betekenis van een begrip in tekstuele vorm beschreven wordt; kan de betekenis van een begrip ook beschreven worden aan de hand van een ander begrip. Om deze begrippen aan elkaar te kunnen relateren gebruiken we <a data-link-type="dfn" href="#dfn-semantische-relatie" class="internalDFN" id="ref-for-dfn-semantische-relatie-1">semantische relatie</a>s. </p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-semantische-relatie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">semantische relatie</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een ander begrip op basis van de betekenis.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#semantic-relations">https://www.w3.org/TR/skos-reference/#semantic-relations</a></td>
+</tr>
+</tbody></table>
+<p>Een taxonomie kent behalve alle elementen van een begrippenlijst ook hiërarchische relaties (nog definieren). Deze hiërarchische relaties zijn optioneel in een begrippenlijst en zijn bijvoorbeeld relevant als een begrip wordt gedefinieerd in termen van een ander begrip, bijvoorbeeld 'een gemaal <em>is een</em> kunstwerk dat ...'. Deze definitie impliceert dat een gemaal een 'enger begrip' is dan een kunstwerk, die ook als semantische relatie kan worden opgenomen.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-taxonomie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">taxonomie</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een taxonomie (of taxonomische classificatie) is een classificatieschema, met name een hiërarchische classificatie, waarin concepten zijn georganiseerd in groepen of typen.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="https://en.wikipedia.org/wiki/Taxonomy">https://en.wikipedia.org/wiki/Taxonomy</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Een taxonomie wordt gebruikt om kennis te ordenen en te indexeren (opgeslagen als documenten, artikelen, video's, enz.), zoals in de vorm van een bibliotheekclassificatiesysteem of een taxonomie van een zoekmachine, zodat gebruikers de informatie die ze zoeken gemakkelijker kunnen vinden. op zoek naar. Taxonomieën zijn hiërarchieën (en hebben dus een intrinsieke boomstructuur).</td>
+</tr>
+</tbody></table>
 <p>In een taxonomie zijn alle begrippen direct of indirect als via een 'heeft breder begrip' gekoppeld aan een top-begrip. Typerend voor een taxonomie is een gebruikersinterface waarbij op het eerste niveau de top-begrippen worden getoond, waarbij per top-begrip begrippen met een engere betekenis worden getoond, die op jun beurt ook weer begrippen met een engere betekenis tonen, enzovoort. Dit betekent dat, als je een taxonomie publiceert, ieder begrip ofwel via een hiërarchische relatie moet worden gekoppeld aan een ander begrip, ofwel een top-begrip moet zijn.</p>
 <p>Als een begrip een engere begrip is van een eerste begrip en een derde begrip weer een begrip is dan het tweede begrip, dan betekent dit niet automatisch dat dit derde begrip ook een enger begrip is in relatie tot het eerste begrip. Dit kan voorkomen in 'slordige' taxonomieën. Een voorbeeld is het definiëren van 'auto' als enger begrip als 'voertuig' en 'wiel' als een enger begrip als 'auto'. Maar 'wiel' is niet logischerwijs een enger begrip als 'voertuig'. 'Heeft breder begrip' en 'heeft enger begrip' zijn dus niet per definitie transitief. Dit betekent niet dat deze kenmerken altijd niet-transitief zijn, maar als je expliciet wilt aangeven dat dat wel zo is zijn er de kenmerken 'heeft breder transitief begrip' en 'heeft enger transitief begrip'. </p>
-<p><em>per element een tabel met prefLabel, definition, scopeNotes, bronnen</em></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-heeft-breder-begrip" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">heeft breder begrip</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een bovenliggend begrip in de hierarchie.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>, <a href="https://www.w3.org/TR/skos-reference/#semantic-relations">https://www.w3.org/TR/skos-reference/#semantic-relations</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Conventie is om heeft breder begrip alleen te gebruiken gebruikt om een ​​onmiddellijke (d.w.z. directe) hiërarchische link tussen twee concepten te beschrijven.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-heeft-enger-begrip" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">heeft enger begrip</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een concept aan een ander concept die meer specifiek in betekenis is.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>, <a href="https://www.w3.org/TR/skos-reference/#semantic-relations">https://www.w3.org/TR/skos-reference/#semantic-relations</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Conventie is om heeft enger begrip alleen te gebruiken gebruikt om een ​​onmiddellijke (d.w.z. directe) hiërarchische link tussen twee concepten te beschrijven.</td>
+</tr>
+</tbody></table>
 <ul>
-<li>heeft breder begrip</li>
-<li>heeft enger begrip</li>
 <li>heeft breder transitief begrip</li>
 <li>heeft enger transitief begrip</li>
 </ul>
 </section><section id="thesaurus"><div class="header-wrapper"><h4 id="x2-1-3-thesaurus"><bdi class="secno">2.1.3 </bdi>Thesaurus</h4><a class="self-link" href="#thesaurus" aria-label="Permalink for Section 2.1.3"></a></div>
-<p>Een thesaurus kent naast hiërarchische semantische relaties ook associatieve, niet hiërarchische relaties tussen begrippen.
-<em>tabel met de beschrijving van een thesaurus met prefLabel, definition, scopeNotes, bronnen en kenmerken van begrippen in een thesaurus</em></p>
+<p>Een thesaurus kent naast hiërarchische semantische relaties ook associatieve, niet hiërarchische relaties tussen begrippen.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-thesaurus" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">thesaurus</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een thesaurus is een gecontroleerde en gestructureerde vocabulaire waarin begrippen semantisch en hierarchisch zijn georganiseerd.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="https://en.wikipedia.org/wiki/Thesaurus">https://en.wikipedia.org/wiki/Thesaurus</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.62</a></td>
+</tr>
+</tbody></table>
 <p>De de ISO 25964 standaard voor thesauri maakt daarbij ook onderscheid tussen instantiële relaties, partitieve relaties en generalaties/specialisaties. Hoewel een al dan niet transitief enger of breder begrip vaak gebruikt als specialisatie respectievelijk generalisatie kan het zowel om een partitieve relaties als om een generalisatie/specialisatie zijn. </p>
-<p>Good practices is om als je in een thesaurus deze instantiële, partitieve en generalisatie/specialisatie relaties gebruikt, niet de standaard al dan niet transitieve bredere en engere relaties uit een gewone taxonomie te gebruiken.
-<em>per element een tabel met prefLabel, definition, scopeNotes, bronnen</em></p>
-<ul>
-<li>is gerelateerd aan</li>
-<li>is specialisatie van</li>
-<li>is generalisatie van</li>
-<li>is onderdeel van</li>
-<li>omvat</li>
-<li>is exemplaar van</li>
-<li>is categorie van</li>
-</ul>
+<p>Good practices is om als je in een thesaurus deze instantiële, partitieve en generalisatie/specialisatie relaties gebruikt, niet de standaard al dan niet transitieve bredere en engere relaties uit een gewone taxonomie te gebruiken.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-is-gerelateerd-aan" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">is gerelateerd aan</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een andere begrip waarmee het semantisch samenhangt</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>, <a href="https://www.w3.org/TR/skos-reference/#semantic-relations">https://www.w3.org/TR/skos-reference/#semantic-relations</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Het begrip is voor zijn betekenis afhankelijk van de betekenis van het andere begrip. Dit betekent dat in de definitie van eerstgenoemde begrip het andere begrip wordt gebruikt.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-is-specialisatie-van" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">is specialisatie van</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een meer generiek begrip.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/iso25964/skos-thes#">http://purl.org/iso25964/skos-thes#</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-is-generalisatie-van" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">is generalisatie van</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een meer specifieker begrip.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/iso25964/skos-thes#">http://purl.org/iso25964/skos-thes#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-is-onderdeel-van" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">is onderdeel van</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een meer omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen onderdeel van voorbeelden van het meer omvattende begrip zijn.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/iso25964/skos-thes#">http://purl.org/iso25964/skos-thes#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-omvat" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">omvat</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een minder omvattend begrip. Voorbeelden van eerstgenoemde begrip zullen bestaan uit voorbeelden van het minder omvattende begrip zijn.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/iso25964/skos-thes#">http://purl.org/iso25964/skos-thes#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-is-exemplaar-van" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">is exemplaar van</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip, een exemplaar, aan een ander begrip, de categorie, waartoe eerstgenoemde begrip behoort.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/iso25964/skos-thes#">http://purl.org/iso25964/skos-thes#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-is-categorie-van" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">is categorie van</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip, de categorie, aan een begrip dat exemplarisch is voor eerstgenoemde begrip.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/iso25964/skos-thes#">http://purl.org/iso25964/skos-thes#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a></td>
+</tr>
+</tbody></table>
 </section><section id="harmonisatiesrelaties"><div class="header-wrapper"><h4 id="x2-1-4-harmonisatiesrelaties"><bdi class="secno">2.1.4 </bdi>Harmonisatiesrelaties</h4><a class="self-link" href="#harmonisatiesrelaties" aria-label="Permalink for Section 2.1.4"></a></div>
-<p>Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. Hiervoor gebruiken we mappingrelaties.
-<em>per element een tabel met prefLabel, definition, scopeNotes, bronnen</em></p>
-<ul>
-<li>exact overeenkomstig</li>
-<li>vrijwel overeenkomstig</li>
-<li>overeenkomstig verwant</li>
-<li>overeenkomstig specifieker</li>
-<li>overeenkomstig generieker</li>
-</ul>
+<p>Begrippen kunnen ook worden gerelateerd aan begrippen in een ander begrippenkader. Hiervoor gebruiken we <a data-link-type="dfn" href="#dfn-harmonisatierelatie" class="internalDFN" id="ref-for-dfn-harmonisatierelatie-1">harmonisatierelatie</a>.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-harmonisatierelatie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">harmonisatierelatie</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, op basis van de betekenis.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#mapping">https://www.w3.org/TR/skos-reference/#mapping</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Het gaat niet zozeer om het harmoniseren in de zin dat iedereen dezelfde term voor een concept moet gebruiken, maar om inzichtelijk te maken hoe het concept samenhangt met concepten in andere contexten.</td>
+</tr>
+</tbody></table>
+<p>Specifiek onderscheiden we de volgende verschillende harmonisatierelaties.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-exact-overeenkomstig" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">exact overeenkomstig</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij uiteenlopende toepassingen gelijk aan elkaar kan worden verondersteld</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#mapping">https://www.w3.org/TR/skos-reference/#mapping</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip gelijk wordt verondersteld aan het begrip uit het andere begrippenkader. Het is een 'leenwoord': het begrip is overgenomen uit het andere begrippenkader.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-vrijwel-overeenkomstig" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">vrijwel overeenkomstig</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een overeenkomstig begrip uit een ander begrippenkader, waarbij de betekenis van deze begrippen bij enkele toepassingen gelijk aan elkaar kan worden verondersteld.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#mapping">https://www.w3.org/TR/skos-reference/#mapping</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-overeenkomstig-verwant" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">overeenkomstig verwant</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een verwant begrip uit een ander begrippenkader</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#mapping">https://www.w3.org/TR/skos-reference/#mapping</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-overeenkomstig-specifieker" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">overeenkomstig specifieker</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een specifieker begrip uit een ander begrippenkader</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#mapping">https://www.w3.org/TR/skos-reference/#mapping</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-overeenkomstig-generieker" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">overeenkomstig generieker</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip aan een generieker begrip uit een ander begrippenkader</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#mapping">https://www.w3.org/TR/skos-reference/#mapping</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Een dergelijke relatie is aanwezig als de betekenis van het betreffende begrip tot stand is gekomen op basis van kennis over het begrip uit het andere begrippenkader</td>
+</tr>
+</tbody></table>
 </section><section id="nadere-typering-van-begrippen"><div class="header-wrapper"><h4 id="x2-1-5-nadere-typering-van-begrippen"><bdi class="secno">2.1.5 </bdi>Nadere typering van begrippen</h4><a class="self-link" href="#nadere-typering-van-begrippen" aria-label="Permalink for Section 2.1.5"></a></div>
 <p>Om in een begrippenkader nog meer semantiek vast te leggen dan in een standaard thesaurus, kunnen extensies op dit profiel worden gemaakt. Een voorbeeld daarvan is skos-lex, waarbij lex staat voor 'legal extension'. In skos-lex worden concepten getypeerd als (rechts)handeling, object (van handeling), actor, agent en vastlegging (record).
 <em>plaatje uit skoslex</em>
@@ -960,13 +1335,91 @@ Ook kijken naar het verschil tussen deze sectie en sectie 2.4</p></div>
 </ul>
 <p>Onder andere de Belastingdienst heeft nog weer een uitbreiding op deze extensie gemaakt, waarin rechtshandelingen nader worden getypeerd op basis van de rechtsbetrekking tussen de actoren. <em>link</em></p>
 </section></section><section id="begrippenkader"><div class="header-wrapper"><h3 id="x2-2-begrippenkader"><bdi class="secno">2.2 </bdi>Begrippenkader</h3><a class="self-link" href="#begrippenkader" aria-label="Permalink for Section 2.2"></a></div>
-<p>Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een <dfn id="dfn-begrippenkader" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">begrippenkader</dfn> is een verzameling van begrippen. De volledige beschrijving van de begrippen wordt conceptueel gezien als onderdeel van het begrippenkader. Dat betekent ook dat wanneer een begrip een semantische relatie kent naar een ander begrip, dat het andere begrip dan ook als onderdeel van het vocabulaire, en dus het begrippenkader, gezien wordt. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook, hier gebruiken we mappingrelaties voor. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader, zoals dat met andere semantische relaties wel het geval is.</p>
-<p><em>tabel met de beschrijving van de volgende items</em> </p>
-<ul>
-<li>Begrippenkader</li>
-<li>topconcept</li>
-<li>behoort tot</li>
-</ul>
+<p>Begrippen kunnen als zelfstandige entiteiten worden gezien maar veelal worden ze opgesteld als onderdeel van een gecureerde begrippenkader, zoals begrippenlijsten, taxonomieën en thesauri. Een <a data-link-type="dfn" href="#dfn-begrippenkader" class="internalDFN" id="ref-for-dfn-begrippenkader-3">begrippenkader</a> is een verzameling van <a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-1">begrip</a>pen. De volledige beschrijving van de begrippen wordt conceptueel gezien als onderdeel van het begrippenkader. Dat betekent ook dat wanneer een begrip een semantische relatie kent naar een ander begrip, dat het andere begrip dan ook als onderdeel van het vocabulaire, en dus het begrippenkader, gezien wordt. Een begrippenkader is vergelijkbaar met een taal die in een bepaald gebied gesproken wordt. En net als een reguliere taal is een begrippenkader een open systeem. Zo kan een taal ook groeien na introductie van nieuwe woorden vanuit talen uit nabijgelegen gebieden. Dat wil zeggen dat een begrippenkader net als een taal naast vertalingen (mappings) kent ook woorden kunnen overnemen; leenwoorden. Zoals "computer", een van origine engels woord, ook behoort tot de nederlandse taal. Het beschrijven welke begrippen behoren tot een begrippenkader is essentieel; maar hoe deze 'vertaald' kunnen worden naar begrippen uit andere begrippenkaders ook, hier gebruiken we mappingrelaties voor. Het gebruik hiervan resulteert niet per definitie in een uitbreiding van het begrippenkader, zoals dat met andere semantische relaties wel het geval is.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-begrippenkader" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">begrippenkader</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een begrippenkader is een verzameling van begrippen, inclusief eventuele semantische relaties tussen deze begrippen.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://en.wikipedia.org/wiki/Controlled_vocabulary">https://en.wikipedia.org/wiki/Controlled_vocabulary</a>, <a href="https://www.w3.org/TR/skos-reference/#schemes">https://www.w3.org/TR/skos-reference/#schemes</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Een begrippenkader kan worden gedefinieerd om begrippen uit verschillende bronnen op te nemen. Begrippenkaders bieden een manier om kennis te ordenen voor het later kunnen ophalen. Ze worden gebruikt in indexeringsschema's, koppen, thesauri, taxonomieën en andere kennisorganisatiesystemen. Begrippenkaders verplichten het gebruik van vooraf gedefinieerde, geautoriseerde termen die zijn geselecteerd door de ontwerpers ervan,in tegenstelling tot natuurlijke taalvocabulaires,die een dergelijke beperking niet hebben.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-topbegrip" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">topbegrip</dfn></td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes">https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-behoort-tot-schema" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">behoort tot schema</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een begrip tot het begrippenkader waartoe het behoort</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>, <a href="https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes">https://www.w3.org/TR/2009/REC-skos-reference-20090818/#schemes</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Volgens de SKOS-standaard kan een begrip tot meerdere begrippenkaders behoren. Praktisch gezien kan dit slechts als sprake is van begrippenkaders waarvan de contexten overlappen</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-label" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">label</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een label voor een object is een voor mensen leesbare naam ter aanduiding van een object.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#">http://www.w3.org/2000/01/rdf-schema#</a>, <a href="https://www.w3.org/TR/rdf-schema/#ch_label">https://www.w3.org/TR/rdf-schema/#ch_label</a></td>
+</tr>
+</tbody></table>
 <section id="metadata-van-een-begrippenkader"><div class="header-wrapper"><h4 id="x2-2-1-metadata-van-een-begrippenkader"><bdi class="secno">2.2.1 </bdi>Metadata van een begrippenkader</h4><a class="self-link" href="#metadata-van-een-begrippenkader" aria-label="Permalink for Section 2.2.1"></a></div>
 <p>Het begrippenkader is niet een concreet iets. Het is een <em>eenheid van context</em>. Aan de hand van de definitie stellen we dan ook dat het begrippenkader een verzameling begrippen is. Dit is niet hetzelfde als een verzameling begripsbeschrijvingen, wat wel concreet is. Het begrippenkader is conceptueel ook een dataset (eventueel dan federatief beheerd). Specifiek zien we het begrippenkader als een <cite><a data-matched-text="[[[ASSET]]]" href="https://www.w3.org/TR/vocab-adms/#asset" id="ref-for-index-term-semantische-asset-1">semantische asset</a></cite>; een waardevolle eenheid van geëxpliciteerde kennis.
 Het is dan ook van belang om, net als bij andere soorten assets of producten het begrippenkader voldoende te beschrijven. De volgende set eigenschappen zien we als relevant voor semantische assets; en zo ook begrippenkaders.</p>
@@ -999,34 +1452,178 @@ Het is dan ook van belang om, net als bij andere soorten assets of producten het
 <li>Keywords</li>
 </ul>
 </section></section><section id="collectie"><div class="header-wrapper"><h3 id="x2-3-collectie"><bdi class="secno">2.3 </bdi>Collectie</h3><a class="self-link" href="#collectie" aria-label="Permalink for Section 2.3"></a></div>
-<p>Collecties bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.</p>
-<p>Collecties zijn verzamelingen van begrippen. Begrippen zijn op verschillende manieren te verzamelen. Het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Echter, is de orde van grote hier verschillend. Begrippenkaders zijn bedoelt om gehele vocabulaires te identificeren. Collecties zijn verzamelingen op kleinere schaal; het betreft verwante begrippen binnen een begrippenkader. Een andere manier zou kunnen zijn door een verzamling op basis van een bovenliggend begrip te identificeren; maar het idee bij collecties is juist dat de collectie zelf geen begrip is en dus puur gezien moet worden als een lijst.</p>
-<p>Wanneer je iets met een collectie wilt kunnen doen; moet je het benoemen; zo spreken we feitelijk over een gelabelde collectie or een array. Dit is ook wat we over het algemeen bedoelen wanneer we het over een collectie hebben. Naast een gelabelde collectie identificeren we twee andere soorten collecties, 1) geordende collecties en 2) geneste collecties.
+<p><a data-link-type="dfn" href="#dfn-collectie" class="internalDFN" id="ref-for-dfn-collectie-1">Collectie</a>s bieden de mogelijkheid om binnen een begrippenkader begrippen die voor hun betekenis niet direct via semantische relaties met elkaar zijn verbonden, toch bij elkaar te zetten. Zo hebben het begrip 'vervuild' dat in milieuwetgeving wordt gedefinieerd en het begrip 'landgoed' dat in de natuurschoonwet wordt gedefinieerd semantisch geen relatie, maar worden ze beiden beschouwd als 'publiekrechtelijke beperking' in het kader van de Wet Kenbaarheid Publiekrechtelijke Beperkingen (WKPB). Deze begrippen kunnen dan samen met andere begrippen die onder de WKPB vallen worden samengebracht in een collectie.</p>
+<p>Collecties zijn verzamelingen van begrippen. Begrippen zijn op verschillende manieren te verzamelen. Het begrippenkader is bijvoorbeeld ook een verzameling begrippen. Echter, is de orde van grote hier verschillend. Begrippenkaders zijn bedoeld om gehele vocabulaires te identificeren. Collecties zijn verzamelingen op kleinere schaal; het betreft verwante begrippen binnen een begrippenkader. Een andere manier zou kunnen zijn door een verzameling op basis van een bovenliggend begrip te identificeren; maar het idee bij collecties is juist dat de collectie zelf geen begrip is en dus puur gezien moet worden als een lijst.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-collectie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">collectie</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een collectie is een verzameling van begrippen die voor een bepaalde situatie betekenisvol bij elkaar passen.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:term:2.38</a>, <a href="https://www.w3.org/TR/skos-reference/#collections">https://www.w3.org/TR/skos-reference/#collections</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Met betekenisvol wordt bedoeld dat de begrippen op een bepaalde manier met elkaar samenhangen. Een collectie betreft vaak een deel van de begrippen uit één begrippenkader, maar kan ook begrippen bevatten die afkomstig zijn uit meerdere begrippenkaders</td>
+</tr>
+</tbody></table>
+<p>Wanneer je iets met een collectie wilt kunnen doen; moet je het benoemen; zo spreken we feitelijk over een gelabelde collectie or een array. Dit is ook wat we over het algemeen bedoelen wanneer we het over een collectie hebben. Naast een gelabelde collectie identificeren we twee andere soorten collecties, 1) <a data-link-type="dfn" href="#dfn-geordende-collectie" class="internalDFN" id="ref-for-dfn-geordende-collectie-1">geordende collectie</a>s en 2) geneste collecties.
 Gelabelde collecties zijn verzamelingen van begrippen en hier is niet persé sprake van een bepaalde ordening. Wanneer dit wel het geval is spreken we van een geordende collectie. Dit is bijvoorbeeld relevant om bepaalde begrippen in alfabetische of chronologische volgorde te plaatsen. Collecties kunnen begrippen bevatten maar ook andere (geordende) collecties.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-geordende-collectie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">geordende collectie</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een geordende collectie is een collectie waar de begrippen in een betekenisvolle volgorde zijn geplaatst.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.w3.org/TR/skos-reference/#collections">https://www.w3.org/TR/skos-reference/#collections</a></td>
+</tr>
+</tbody></table>
 <p>Het maakt het mogelijk om begrippen te groepen op een manier die haaks staat op de hierarchische structuur van het begrippenkader en zeggen dus niks over de plek van de bijbehorende begrippen in het begrippenkader. In het bovengenoemde voorbeeld is er met gebruik van de collectie geen semantische relatie tussen de WKPB en het begrip 'landgoed'. Een collectie zie je ook vaak terug in de context van een bepaalde toepassing waar het nodig is om bepaalde keuzelijsten en/of dropdown menu's samen te stellen.</p>
-<p><em>tabel met de beschrijving van een collectie met prefLabel, definition, scopeNotes, bronnen en elementen in een collectie</em></p>
-<ul>
-<li>bevat</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-bevat" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">bevat</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Relateert een collectie aan een begrip of een collectie van begrippen dat onderdeel is van deze collectie</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>, <a href="https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12">https://www.iso.org/obp/ui/#iso:std:iso:25964:-1:ed-1:v1:en:sec:2.12</a>, <a href="https://www.w3.org/TR/skos-reference/#collections">https://www.w3.org/TR/skos-reference/#collections</a></td>
+</tr>
+</tbody></table>
 <section id="metadata-van-een-collectie"><div class="header-wrapper"><h4 id="x2-3-1-metadata-van-een-collectie"><bdi class="secno">2.3.1 </bdi>Metadata van een collectie</h4><a class="self-link" href="#metadata-van-een-collectie" aria-label="Permalink for Section 2.3.1"></a></div>
+<p>Een collectie kan verder beschreven worden met de volgende eigenschappen</p>
 <ul>
-<li>voorkeursnaam collectie</li>
-<li>alternatieve naam collectie</li>
-<li>beschrijving collectie</li>
-<li>klare taal beschrijving collectie </li>
-<li>toelichting</li>
+<li><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-2">term</a></li>
+<li><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-1">uitleg</a></li>
 </ul>
 </section></section><section id="bron"><div class="header-wrapper"><h3 id="x2-4-bron"><bdi class="secno">2.4 </bdi>Bron</h3><a class="self-link" href="#bron" aria-label="Permalink for Section 2.4"></a></div>
-<div class="definitie">Een <dfn id="dfn-bron" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">bron</dfn> is een document waaruit de betekenis van het begrip is afgeleid.</div>
-Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.
-
+<p>Een <a data-link-type="dfn" href="#dfn-bron" class="internalDFN" id="ref-for-dfn-bron-2">bron</a> is een document waaruit de betekenis van het begrip is afgeleid.
+Het is good practice om voor ieder begrip bronverwijzingen op te nemen. Zo is het duidelijk waar de definitie van een begrip op gebasseerd is. Dit verhoogd de kwaliteit van het begrip en vooral ook de betrouwbaarheid.</p>
 <p>Hiervoor hebben we het volgende patroon:</p>
-<p>Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-1">begrip</a></strong> heeft een eigenschap '<strong>bron</strong>' of specifieker <strong>bronverwijzing</strong>.
-De waarde van <strong>bron</strong> is een non-literal resource. Dit is de daadwerkelijke <strong>Bron</strong> of specifieker, het <strong>brondocument</strong>.
-Het is aangeraden om een bron te beschrijven met een compact, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-1">term</a></strong>, een uitgebreide <strong>omschrijving</strong>, een <strong><a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-1">url</a></strong> als de bron een vindplaats heeft op het web en anders een <strong><a data-link-type="dfn" href="#dfn-citaat" class="internalDFN" id="ref-for-dfn-citaat-1">citaat</a></strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd.</p>
+<p>Een <strong><a data-link-type="dfn" href="#dfn-begrip" class="internalDFN" id="ref-for-dfn-begrip-2">begrip</a></strong> heeft een eigenschap '<strong>bron</strong>' (of specifieker; <strong>bronverwijzing</strong>).</p>
+<p>De waarde van <strong>bron</strong> is een non-literal resource. Dit is de daadwerkelijke <strong>Bron</strong> (of specifieker het; <strong>brondocument</strong>).</p>
+<p>Het is aangeraden om een bron te beschrijven met een <strong><a data-link-type="dfn" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-1">url</a></strong> als de bron een vindplaats heeft op het web en anders een <strong><a data-link-type="dfn" href="#dfn-citaat" class="internalDFN" id="ref-for-dfn-citaat-1">citaat</a></strong> waarin de citeerinformatie van de bron in een bepaalde citeerstijl is vastgelegd. Hiermee kan de bron gevonden worden. Ook kan de bron beschreven worden met een compact, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-term" class="internalDFN" id="ref-for-dfn-term-3">term</a></strong>, een uitgebreide, voor de mens leesbare <strong><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-2">uitleg</a></strong> en een <strong><a data-link-type="dfn" href="#dfn-soort" class="internalDFN" id="ref-for-dfn-soort-1">soort</a></strong> om aan te geven wat de aard van het brondocument is.</p>
 <p>De bron kan een heel document of een fragment daarvan zijn, denk aan een boek, een hoofdstuk of een paragraaf.</p>
-<div class="definitie">Een <dfn id="dfn-url" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">url</dfn> is de vindplaats van de resource op het internet.</div>
-<div class="definitie">Een <dfn id="dfn-citaat" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">citaat</dfn> is een bibliografische referentie naar een document.</div></section></section>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-bron" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">bron</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een bron is een document waaruit de betekenis van een begrip is afgeleid.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>, <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>, <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>De bron kan een geschreven bron zijn of een resource op het web. Aanbevolen best practice is om de bron te beschrijven door middel van een tekenreeks die voldoet aan een formeel identificatiesysteem. Bij een resource op het web is ook de uri van die bron relevant. Om zowel naar een geschreven bron als naar een bron op het web (vaak zonder gestandaardiseerde beschrijving) te verwijzen wordt hier verwezen naar een eigen resource, die zowel een gestandaardiseerde beschrijving als een verwijzing naar de eigenlijke bron bevat.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-url" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">url</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een url is de vindplaats van een resource op het internet.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-citaat" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">citaat</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een citaat is een bibliografische referentie naar een document.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>, <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>, <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation</a></td>
+</tr>
+<tr>
+<td><strong>toelichting</strong></td>
+<td>Een citaat wordt als string vastgelegd. Hier dient voldoende detail in aangebracht te zijn zodat de resource gevonden kan worden. Er bestaan verschillende citeerstijlen die toegepast kunnen worden zoals IEEE, MLA of APA.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-soort" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">soort</dfn></td>
+</tr>
+<tr>
+<td><strong>definitie</strong></td>
+<td>Een soort is de aard of het genre van een ding.</td>
+</tr>
+<tr>
+<td><strong>bron</strong></td>
+<td><a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a></td>
+</tr>
+</tbody></table>
+</section></section>
   <section id="H3" data-format="markdown"><div class="header-wrapper"><h2 id="x3-toepassingsprofiel-in-ld"><bdi class="secno">3. </bdi>Toepassingsprofiel in LD</h2><a class="self-link" href="#H3" aria-label="Permalink for Section 3."></a></div>
 <p>Dit hoofdstuk beschrijft de set aan afspraken voor het toepassen van het het conceptuele model (zoals beschreven in hoofdstuk 2) in Linked Data. Deze afspraken zijn vastgelegd in een RDF model.
 Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shapesgraph. Als RDF vocabulaire hanteren we bestaande W3C standaarden. Welke dit zijn en hoe deze zich verhouden tot het conceptueel model wordt beschreven in sectie <a href="#taalbinding">Taalbinding</a>. Hoe deze vocabulaires toegepast moeten worden, conform het conceptuele model, is beschreven in sectie <a href="#specificatie">Specificatie</a>.</p>
@@ -1172,7 +1769,7 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 <td><a href="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a></td>
 </tr>
 <tr>
-<td>behoort tot</td>
+<td>behoort tot schema</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#inScheme">skos:inScheme</a></td>
 </tr>
 <tr>
@@ -1252,10 +1849,6 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 <td><a href="http://purl.org/dc/terms/license">dct:license</a></td>
 </tr>
 <tr>
-<td>omschrijving</td>
-<td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
-</tr>
-<tr>
 <td>omvat</td>
 <td><a href="http://purl.org/iso25964/skos-thes#narrowerPartitive">isothes:narrowerPartitive</a></td>
 </tr>
@@ -1306,19 +1899,19 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </thead>
 <tbody><tr>
-<td>label</td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-1">label</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>uitleg</td>
+<td><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-3">uitleg</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>heeft topbegrip</td>
+<td>heeft <a data-link-type="dfn" href="#dfn-topbegrip" class="internalDFN" id="ref-for-dfn-topbegrip-1">topbegrip</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#hasTopConcept">skos:hasTopConcept</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
@@ -1337,160 +1930,172 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </thead>
 <tbody><tr>
-<td>voorkeursterm</td>
+<td><a data-link-type="dfn" href="#dfn-voorkeursterm" class="internalDFN" id="ref-for-dfn-voorkeursterm-3">voorkeursterm</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>alternative label</td>
+<td><a data-link-type="dfn" href="#dfn-alternatieve-term" class="internalDFN" id="ref-for-dfn-alternatieve-term-1">alternatieve term</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#altLabel">skos:altLabel</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>zoekterm</td>
+<td><a data-link-type="dfn" href="#dfn-zoekterm" class="internalDFN" id="ref-for-dfn-zoekterm-1">zoekterm</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#hiddenLabel">skos:hiddenLabel</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/ns/shacl#Literal">sh:Literal</a></td>
 </tr>
 <tr>
-<td>code</td>
+<td><a data-link-type="dfn" href="#dfn-code" class="internalDFN" id="ref-for-dfn-code-1">code</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/ns/shacl#Literal">sh:Literal</a></td>
 </tr>
 <tr>
-<td>behoort tot</td>
+<td><a data-link-type="dfn" href="#dfn-behoort-tot-schema" class="internalDFN" id="ref-for-dfn-behoort-tot-schema-1">behoort tot schema</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#inScheme">skos:inScheme</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a></td>
 </tr>
 <tr>
-<td>uitleg</td>
+<td><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-4">uitleg</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>definitie</td>
+<td><a data-link-type="dfn" href="#dfn-definitie" class="internalDFN" id="ref-for-dfn-definitie-4">definitie</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#definition">skos:definition</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td><a data-link-type="dfn" href="#dfn-bron" class="internalDFN" id="ref-for-dfn-bron-2">bron</a></td>
+<td><a data-link-type="dfn" href="#dfn-bron" class="internalDFN" id="ref-for-dfn-bron-3">bron</a></td>
 <td><a href="http://purl.org/dc/terms/source">dct:source</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/ns/shacl#BlankNodeOrIRI">sh:BlankNodeOrIRI</a></td>
 </tr>
 <tr>
-<td>heeft breder begrip</td>
+<td><a data-link-type="dfn" href="#dfn-heeft-breder-begrip" class="internalDFN" id="ref-for-dfn-heeft-breder-begrip-1">heeft breder begrip</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#broader">skos:broader</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>heeft enger begrip</td>
+<td><a data-link-type="dfn" href="#dfn-heeft-enger-begrip" class="internalDFN" id="ref-for-dfn-heeft-enger-begrip-1">heeft enger begrip</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#narrower">skos:narrower</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>is gerelateerd aan</td>
+<td><a data-link-type="dfn" href="#dfn-is-gerelateerd-aan" class="internalDFN" id="ref-for-dfn-is-gerelateerd-aan-1">is gerelateerd aan</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#related">skos:related</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>wijzigingsnotitie</td>
+<td><a data-link-type="dfn" href="#dfn-wijzigingsnotitie" class="internalDFN" id="ref-for-dfn-wijzigingsnotitie-1">wijzigingsnotitie</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#changeNote">skos:changeNote</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>redactionele opmerking</td>
+<td><a data-link-type="dfn" href="#dfn-redactionele-opmerking" class="internalDFN" id="ref-for-dfn-redactionele-opmerking-1">redactionele opmerking</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#editorialNote">skos:editorialNote</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>historische notitie</td>
+<td><a data-link-type="dfn" href="#dfn-historische-notitie" class="internalDFN" id="ref-for-dfn-historische-notitie-1">historische notitie</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#historyNote">skos:historyNote</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>toelichting</td>
+<td><a data-link-type="dfn" href="#dfn-toelichting" class="internalDFN" id="ref-for-dfn-toelichting-2">toelichting</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#scopeNote">skos:scopeNote</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>voorbeeld</td>
+<td><a data-link-type="dfn" href="#dfn-voorbeeld" class="internalDFN" id="ref-for-dfn-voorbeeld-1">voorbeeld</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#example">skos:example</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/ns/shacl#IRIOrLiteral">sh:IRIOrLiteral</a></td>
 </tr>
 <tr>
-<td>overeenkomstig generieker</td>
+<td><a data-link-type="dfn" href="#dfn-overeenkomstig-generieker" class="internalDFN" id="ref-for-dfn-overeenkomstig-generieker-1">overeenkomstig generieker</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#broadMatch">skos:broadMatch</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>vrijwel overeenkomstig</td>
+<td><a data-link-type="dfn" href="#dfn-overeenkomstig-specifieker" class="internalDFN" id="ref-for-dfn-overeenkomstig-specifieker-1">overeenkomstig specifieker</a></td>
+<td><a href="http://www.w3.org/2004/02/skos/core#broadMatch">skos:broadMatch</a></td>
+<td>0..*</td>
+<td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn" href="#dfn-vrijwel-overeenkomstig" class="internalDFN" id="ref-for-dfn-vrijwel-overeenkomstig-1">vrijwel overeenkomstig</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#closeMatch">skos:closeMatch</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>exact overeenkomstig</td>
+<td><a data-link-type="dfn" href="#dfn-exact-overeenkomstig" class="internalDFN" id="ref-for-dfn-exact-overeenkomstig-1">exact overeenkomstig</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#exactMatch">skos:exactMatch</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>overeenkomstig verwant</td>
+<td><a data-link-type="dfn" href="#dfn-overeenkomstig-verwant" class="internalDFN" id="ref-for-dfn-overeenkomstig-verwant-1">overeenkomstig verwant</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#relatedMatch">skos:relatedMatch</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>is specialisatie van</td>
+<td><a data-link-type="dfn" href="#dfn-is-specialisatie-van" class="internalDFN" id="ref-for-dfn-is-specialisatie-van-1">is specialisatie van</a></td>
 <td><a href="http://purl.org/iso25964/skos-thes#broaderGeneric">isothes:broaderGeneric</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>is generalisatie van</td>
+<td><a data-link-type="dfn" href="#dfn-is-generalisatie-van" class="internalDFN" id="ref-for-dfn-is-generalisatie-van-1">is generalisatie van</a></td>
 <td><a href="http://purl.org/iso25964/skos-thes#narrowerGeneric">isothes:narrowerGeneric</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>is onderdeel van</td>
+<td><a data-link-type="dfn" href="#dfn-is-onderdeel-van" class="internalDFN" id="ref-for-dfn-is-onderdeel-van-1">is onderdeel van</a></td>
 <td><a href="http://purl.org/iso25964/skos-thes#broaderPartitive">isothes:broaderPartitive</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>omvat</td>
+<td><a data-link-type="dfn" href="#dfn-omvat" class="internalDFN" id="ref-for-dfn-omvat-1">omvat</a></td>
 <td><a href="http://purl.org/iso25964/skos-thes#narrowerPartitive">isothes:narrowerPartitive</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>exemplaar van</td>
+<td><a data-link-type="dfn" href="#dfn-is-exemplaar-van" class="internalDFN" id="ref-for-dfn-is-exemplaar-van-1">is exemplaar van</a></td>
 <td><a href="http://purl.org/iso25964/skos-thes#broaderInstantial">isothes:broaderInstantial</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
 </tr>
 <tr>
-<td>categorie van</td>
+<td><a data-link-type="dfn" href="#dfn-is-categorie-van" class="internalDFN" id="ref-for-dfn-is-categorie-van-1">is categorie van</a></td>
 <td><a href="http://purl.org/iso25964/skos-thes#narrowerInstantial">isothes:narrowerInstantial</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-2">label</a></td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td>0..*</td>
+<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-bron"><div class="header-wrapper"><h4 id="x3-3-3-specificatie-bron"><bdi class="secno">3.3.3 </bdi>Specificatie Bron</h4><a class="self-link" href="#specificatie-bron" aria-label="Permalink for Section 3.3.3"></a></div>
@@ -1505,9 +2110,15 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </thead>
 <tbody><tr>
-<td>label</td>
-<td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
-<td>1..*</td>
+<td><a data-link-type="dfn" href="#dfn-citaat" class="internalDFN" id="ref-for-dfn-citaat-2">citaat</a></td>
+<td><a href="http://purl.org/dc/terms/bibliographicCitation">dct:bibliographicCitation</a></td>
+<td>0..*</td>
+<td><a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn" href="#dfn-uitleg" class="internalDFN" id="ref-for-dfn-uitleg-5">uitleg</a></td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a></td>
+<td>0..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
@@ -1517,22 +2128,16 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 <td><a href="http://www.w3.org/ns/shacl#IRI">sh:IRI</a></td>
 </tr>
 <tr>
-<td>omschrijving</td>
-<td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
-<td>0..*</td>
-<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
-</tr>
-<tr>
-<td><a data-link-type="dfn" href="#dfn-citaat" class="internalDFN" id="ref-for-dfn-citaat-2">citaat</a></td>
-<td><a href="http://purl.org/dc/terms/bibliographicCitation">dct:bibliographicCitation</a></td>
-<td>0..*</td>
-<td><a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a></td>
-</tr>
-<tr>
-<td>soort</td>
+<td><a data-link-type="dfn" href="#dfn-soort" class="internalDFN" id="ref-for-dfn-soort-2">soort</a></td>
 <td><a href="http://purl.org/dc/terms/type">dct:type</a></td>
 <td>0..*</td>
 <td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></td>
+</tr>
+<tr>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-3">label</a></td>
+<td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+<td>1..*</td>
+<td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-collectie"><div class="header-wrapper"><h4 id="x3-3-4-specificatie-collectie"><bdi class="secno">3.3.4 </bdi>Specificatie Collectie</h4><a class="self-link" href="#specificatie-collectie" aria-label="Permalink for Section 3.3.4"></a></div>
@@ -1547,16 +2152,16 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </thead>
 <tbody><tr>
-<td>label</td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-4">label</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>bevat</td>
+<td><a data-link-type="dfn" href="#dfn-bevat" class="internalDFN" id="ref-for-dfn-bevat-1">bevat</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#member">skos:member</a></td>
 <td>0..*</td>
-<td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a> OR <a href="http://www.w3.org/2004/02/skos/core#Collection">skos:Collection</a></td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">sh:IRI</a></td>
 </tr>
 </tbody></table>
 </section><section id="specificatie-geordendecollectie"><div class="header-wrapper"><h4 id="x3-3-5-specificatie-geordendecollectie"><bdi class="secno">3.3.5 </bdi>Specificatie GeordendeCollectie</h4><a class="self-link" href="#specificatie-geordendecollectie" aria-label="Permalink for Section 3.3.5"></a></div>
@@ -1571,16 +2176,16 @@ Een RDF model bestaat uit twee delen; 1) een RDF vocabulaire en 2) een RDF Shape
 </tr>
 </thead>
 <tbody><tr>
-<td>label</td>
+<td><a data-link-type="dfn" href="#dfn-label" class="internalDFN" id="ref-for-dfn-label-5">label</a></td>
 <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
 <td>1..*</td>
 <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a></td>
 </tr>
 <tr>
-<td>bevat</td>
+<td><a data-link-type="dfn" href="#dfn-bevat" class="internalDFN" id="ref-for-dfn-bevat-2">bevat</a></td>
 <td><a href="http://www.w3.org/2004/02/skos/core#memberList">skos:memberList</a></td>
-<td>0..1</td>
-<td><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a> OR <a href="http://www.w3.org/2004/02/skos/core#Collection">skos:Collection</a></td>
+<td>0..*</td>
+<td><a href="http://www.w3.org/ns/shacl#IRI">sh:IRI</a></td>
 </tr>
 </tbody></table>
 </section></section></section>
@@ -1781,27 +2386,97 @@ ex2:Land a skos:Concept ;
     
     <ul class="index">
     <li>
+      <a class="index-term" href="#dfn-alternatieve-term">alternatieve term</a> 
+    <span class="print-only">§2.1.1.1</span></li><li>
       <a class="index-term" href="#dfn-begrip">begrip</a> 
     <span class="print-only">§2.1</span></li><li>
       <a class="index-term" href="#dfn-begrippenkader">begrippenkader</a> 
     <span class="print-only">§2.2</span></li><li>
+      <a class="index-term" href="#dfn-begrippenlijst">begrippenlijst</a> 
+    <span class="print-only">§2.1.1</span></li><li>
+      <a class="index-term" href="#dfn-behoort-tot-schema">behoort tot schema</a> 
+    <span class="print-only">§2.2</span></li><li>
+      <a class="index-term" href="#dfn-bevat">bevat</a> 
+    <span class="print-only">§2.3</span></li><li>
       <a class="index-term" href="#dfn-bron">bron</a> 
     <span class="print-only">§2.4</span></li><li>
       <a class="index-term" href="#dfn-citaat">citaat</a> 
     <span class="print-only">§2.4</span></li><li>
+      <a class="index-term" href="#dfn-code">code</a> 
+    <span class="print-only">§2.1.1.2</span></li><li>
+      <a class="index-term" href="#dfn-collectie">collectie</a> 
+    <span class="print-only">§2.3</span></li><li>
       <a class="index-term" href="#dfn-definitie">definitie</a> 
     <span class="print-only">§2.1.1.2</span></li><li>
+      <a class="index-term" href="#dfn-exact-overeenkomstig">exact overeenkomstig</a> 
+    <span class="print-only">§2.1.4</span></li><li>
+      <a class="index-term" href="#dfn-geordende-collectie">geordende collectie</a> 
+    <span class="print-only">§2.3</span></li><li>
+      <a class="index-term" href="#dfn-harmonisatierelatie">harmonisatierelatie</a> 
+    <span class="print-only">§2.1.4</span></li><li>
+      <a class="index-term" href="#dfn-heeft-breder-begrip">heeft breder begrip</a> 
+    <span class="print-only">§2.1.2</span></li><li>
+      <a class="index-term" href="#dfn-heeft-enger-begrip">heeft enger begrip</a> 
+    <span class="print-only">§2.1.2</span></li><li>
+      <a class="index-term" href="#dfn-historische-notitie">historische notitie</a> 
+    <span class="print-only">§2.1.1.2</span></li><li>
+      <a class="index-term" href="#dfn-is-categorie-van">is categorie van</a> 
+    <span class="print-only">§2.1.3</span></li><li>
+      <a class="index-term" href="#dfn-is-exemplaar-van">is exemplaar van</a> 
+    <span class="print-only">§2.1.3</span></li><li>
+      <a class="index-term" href="#dfn-is-generalisatie-van">is generalisatie van</a> 
+    <span class="print-only">§2.1.3</span></li><li>
+      <a class="index-term" href="#dfn-is-gerelateerd-aan">is gerelateerd aan</a> 
+    <span class="print-only">§2.1.3</span></li><li>
+      <a class="index-term" href="#dfn-is-onderdeel-van">is onderdeel van</a> 
+    <span class="print-only">§2.1.3</span></li><li>
+      <a class="index-term" href="#dfn-is-specialisatie-van">is specialisatie van</a> 
+    <span class="print-only">§2.1.3</span></li><li>
+      <a class="index-term" href="#dfn-label">label</a> 
+    <span class="print-only">§2.2</span></li><li>
+      <a class="index-term" href="#dfn-notitie">notitie</a> 
+    <span class="print-only">§2.1.1.2</span></li><li>
+      <a class="index-term" href="#dfn-omvat">omvat</a> 
+    <span class="print-only">§2.1.3</span></li><li>
+      <a class="index-term" href="#dfn-overeenkomstig-generieker">overeenkomstig generieker</a> 
+    <span class="print-only">§2.1.4</span></li><li>
+      <a class="index-term" href="#dfn-overeenkomstig-specifieker">overeenkomstig specifieker</a> 
+    <span class="print-only">§2.1.4</span></li><li>
+      <a class="index-term" href="#dfn-overeenkomstig-verwant">overeenkomstig verwant</a> 
+    <span class="print-only">§2.1.4</span></li><li>
       <a class="index-term" href="#dfn-polyhierarchy">polyhierarchy</a> 
     <span class="print-only">§4.2</span></li><li>
+      <a class="index-term" href="#dfn-redactionele-opmerking">redactionele opmerking</a> 
+    <span class="print-only">§2.1.1.2</span></li><li>
+      <a class="index-term" href="#dfn-semantische-relatie">semantische relatie</a> 
+    <span class="print-only">§2.1.2</span></li><li>
+      <a class="index-term" href="#dfn-soort">soort</a> 
+    <span class="print-only">§2.4</span></li><li>
+      <a class="index-term" href="#dfn-taxonomie">taxonomie</a> 
+    <span class="print-only">§2.1.2</span></li><li>
       <a class="index-term" href="#dfn-term">term</a> 
     <span class="print-only">§2.1.1.1</span></li><li>
+      <a class="index-term" href="#dfn-thesaurus">thesaurus</a> 
+    <span class="print-only">§2.1.3</span></li><li>
       <a class="index-term" href="#dfn-toelichting">toelichting</a> 
+    <span class="print-only">§2.1.1.2</span></li><li>
+      <a class="index-term" href="#dfn-topbegrip">topbegrip</a> 
+    <span class="print-only">§2.2</span></li><li>
+      <a class="index-term" href="#dfn-uitleg">uitleg</a> 
     <span class="print-only">§2.1.1.2</span></li><li>
       <a class="index-term" href="#dfn-upward-posting">upward posting</a> 
     <span class="print-only">§4.1</span></li><li>
       <a class="index-term" href="#dfn-url">url</a> 
     <span class="print-only">§2.4</span></li><li>
+      <a class="index-term" href="#dfn-voorbeeld">voorbeeld</a> 
+    <span class="print-only">§2.1.1.2</span></li><li>
       <a class="index-term" href="#dfn-voorkeursterm">voorkeursterm</a> 
+    <span class="print-only">§2.1.1.1</span></li><li>
+      <a class="index-term" href="#dfn-vrijwel-overeenkomstig">vrijwel overeenkomstig</a> 
+    <span class="print-only">§2.1.4</span></li><li>
+      <a class="index-term" href="#dfn-wijzigingsnotitie">wijzigingsnotitie</a> 
+    <span class="print-only">§2.1.1.2</span></li><li>
+      <a class="index-term" href="#dfn-zoekterm">zoekterm</a> 
     <span class="print-only">§2.1.1.1</span></li>
   </ul>
   </section><section id="index-defined-elsewhere"><div class="header-wrapper"><h3 id="a-2-terms-defined-by-reference"><bdi class="secno">A.2 </bdi>Terms defined by reference</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
@@ -1880,6 +2555,22 @@ ex2:Land a skos:Concept ;
 <tr>
 <td>Toelichting</td>
 <td>Labelled collections can be used where you would like a set of concepts to be displayed under a 'node label' in the hierarchy.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>soort Typering<div style="width:325px"></div></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Voorkeursterm</td>
+<td>type</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>A type is the nature or genre of a resource.</td>
 </tr>
 </tbody></table>
 <table>
@@ -2041,6 +2732,22 @@ ex2:Land a skos:Concept ;
 <table>
 <thead>
 <tr>
+<th>url<div style="width:325px"></div></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Voorkeursterm</td>
+<td>page</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>A page is the location of a resource on the internet.</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
 <th>begrip<div style="width:325px"></div></th>
 <th></th>
 </tr>
@@ -2108,6 +2815,22 @@ ex2:Land a skos:Concept ;
 <tr>
 <td>Toelichting</td>
 <td>A taxonomy is be used to organize and index knowledge (stored as documents, articles, videos, etc.), such as in the form of a library classification system, or a search engine taxonomy, so that users can more easily find the information they are searching for. Taxonomies are hierarchies (and thus, have an intrinsic tree structure).</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>voorbeeld<div style="width:325px"></div></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Voorkeursterm</td>
+<td>example</td>
+</tr>
+<tr>
+<td>Definitie</td>
+<td>An example of the use of a concept.</td>
 </tr>
 </tbody></table>
 <table>
@@ -2453,22 +3176,6 @@ ex2:Land a skos:Concept ;
 <table>
 <thead>
 <tr>
-<th>url<div style="width:325px"></div></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Voorkeursterm</td>
-<td>page</td>
-</tr>
-<tr>
-<td>Definitie</td>
-<td>A page is the location of a resource on the internet.</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
 <th>bron<div style="width:325px"></div></th>
 <th></th>
 </tr>
@@ -2641,7 +3348,21 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-begrip-1" title="§ 2.4 Bron">§ 2.4 Bron</a> 
+    <a href="#ref-for-dfn-begrip-1" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
+  </li><li>
+    <a href="#ref-for-dfn-begrip-2" title="§ 2.4 Bron">§ 2.4 Bron</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-begrippenlijst" aria-label="Links in this document to definition: begrippenlijst">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-begrippenlijst" aria-label="Permalink for definition: begrippenlijst. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-begrippenlijst-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-term" aria-label="Links in this document to definition: term">
@@ -2653,7 +3374,11 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-term-1" title="§ 2.4 Bron">§ 2.4 Bron</a> 
+    <a href="#ref-for-dfn-term-1" title="§ 2.1.1 Begrippenlijst">§ 2.1.1 Begrippenlijst</a> 
+  </li><li>
+    <a href="#ref-for-dfn-term-2" title="§ 2.3.1 Metadata van een collectie">§ 2.3.1 Metadata van een collectie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-term-3" title="§ 2.4 Bron">§ 2.4 Bron</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-voorkeursterm" aria-label="Links in this document to definition: voorkeursterm">
@@ -2668,6 +3393,44 @@ ex2:Land a skos:Concept ;
     <a href="#ref-for-dfn-voorkeursterm-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
     <a href="#ref-for-dfn-voorkeursterm-2" title="§ 2.1.1 Begrippenlijst">§ 2.1.1 Begrippenlijst</a> 
+  </li><li>
+    <a href="#ref-for-dfn-voorkeursterm-3" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-alternatieve-term" aria-label="Links in this document to definition: alternatieve term">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-alternatieve-term" aria-label="Permalink for definition: alternatieve term. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-alternatieve-term-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-zoekterm" aria-label="Links in this document to definition: zoekterm">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-zoekterm" aria-label="Permalink for definition: zoekterm. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-zoekterm-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-notitie" aria-label="Links in this document to definition: notitie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-notitie" aria-label="Permalink for definition: notitie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-notitie-1" title="§ 2.1.1 Begrippenlijst">§ 2.1.1 Begrippenlijst</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-toelichting" aria-label="Links in this document to definition: toelichting">
@@ -2680,6 +3443,76 @@ ex2:Land a skos:Concept ;
       <ul>
     <li>
     <a href="#ref-for-dfn-toelichting-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
+  </li><li>
+    <a href="#ref-for-dfn-toelichting-2" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-historische-notitie" aria-label="Links in this document to definition: historische notitie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-historische-notitie" aria-label="Permalink for definition: historische notitie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-historische-notitie-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wijzigingsnotitie" aria-label="Links in this document to definition: wijzigingsnotitie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wijzigingsnotitie" aria-label="Permalink for definition: wijzigingsnotitie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-wijzigingsnotitie-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-redactionele-opmerking" aria-label="Links in this document to definition: redactionele opmerking">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-redactionele-opmerking" aria-label="Permalink for definition: redactionele opmerking. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-redactionele-opmerking-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-uitleg" aria-label="Links in this document to definition: uitleg">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-uitleg" aria-label="Permalink for definition: uitleg. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-uitleg-1" title="§ 2.3.1 Metadata van een collectie">§ 2.3.1 Metadata van een collectie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-uitleg-2" title="§ 2.4 Bron">§ 2.4 Bron</a> 
+  </li><li>
+    <a href="#ref-for-dfn-uitleg-3" title="§ 3.3.1 Specificatie Begrippenkader">§ 3.3.1 Specificatie Begrippenkader</a> 
+  </li><li>
+    <a href="#ref-for-dfn-uitleg-4" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li><li>
+    <a href="#ref-for-dfn-uitleg-5" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-code" aria-label="Links in this document to definition: code">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-code" aria-label="Permalink for definition: code. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-code-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: definitie">
@@ -2694,6 +3527,238 @@ ex2:Land a skos:Concept ;
     <a href="#ref-for-dfn-definitie-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
     <a href="#ref-for-dfn-definitie-2" title="§ 2.1.1 Begrippenlijst">§ 2.1.1 Begrippenlijst</a> 
+  </li><li>
+    <a href="#ref-for-dfn-definitie-3" title="§ 2.1.2 Taxonomie">§ 2.1.2 Taxonomie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-definitie-4" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-voorbeeld" aria-label="Links in this document to definition: voorbeeld">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-voorbeeld" aria-label="Permalink for definition: voorbeeld. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-voorbeeld-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-semantische-relatie" aria-label="Links in this document to definition: semantische relatie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-semantische-relatie" aria-label="Permalink for definition: semantische relatie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-semantische-relatie-1" title="§ 2.1.2 Taxonomie">§ 2.1.2 Taxonomie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-taxonomie" aria-label="Links in this document to definition: taxonomie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-taxonomie" aria-label="Permalink for definition: taxonomie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-taxonomie-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-heeft-breder-begrip" aria-label="Links in this document to definition: heeft breder begrip">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-heeft-breder-begrip" aria-label="Permalink for definition: heeft breder begrip. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-heeft-breder-begrip-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-heeft-enger-begrip" aria-label="Links in this document to definition: heeft enger begrip">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-heeft-enger-begrip" aria-label="Permalink for definition: heeft enger begrip. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-heeft-enger-begrip-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-thesaurus" aria-label="Links in this document to definition: thesaurus">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-thesaurus" aria-label="Permalink for definition: thesaurus. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-thesaurus-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-gerelateerd-aan" aria-label="Links in this document to definition: is gerelateerd aan">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-is-gerelateerd-aan" aria-label="Permalink for definition: is gerelateerd aan. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-is-gerelateerd-aan-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-specialisatie-van" aria-label="Links in this document to definition: is specialisatie van">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-is-specialisatie-van" aria-label="Permalink for definition: is specialisatie van. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-is-specialisatie-van-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-generalisatie-van" aria-label="Links in this document to definition: is generalisatie van">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-is-generalisatie-van" aria-label="Permalink for definition: is generalisatie van. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-is-generalisatie-van-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-onderdeel-van" aria-label="Links in this document to definition: is onderdeel van">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-is-onderdeel-van" aria-label="Permalink for definition: is onderdeel van. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-is-onderdeel-van-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-omvat" aria-label="Links in this document to definition: omvat">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-omvat" aria-label="Permalink for definition: omvat. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-omvat-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-exemplaar-van" aria-label="Links in this document to definition: is exemplaar van">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-is-exemplaar-van" aria-label="Permalink for definition: is exemplaar van. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-is-exemplaar-van-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-is-categorie-van" aria-label="Links in this document to definition: is categorie van">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-is-categorie-van" aria-label="Permalink for definition: is categorie van. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-is-categorie-van-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-harmonisatierelatie" aria-label="Links in this document to definition: harmonisatierelatie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-harmonisatierelatie" aria-label="Permalink for definition: harmonisatierelatie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-harmonisatierelatie-1" title="§ 2.1.4 Harmonisatiesrelaties">§ 2.1.4 Harmonisatiesrelaties</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-exact-overeenkomstig" aria-label="Links in this document to definition: exact overeenkomstig">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-exact-overeenkomstig" aria-label="Permalink for definition: exact overeenkomstig. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-exact-overeenkomstig-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-vrijwel-overeenkomstig" aria-label="Links in this document to definition: vrijwel overeenkomstig">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-vrijwel-overeenkomstig" aria-label="Permalink for definition: vrijwel overeenkomstig. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-vrijwel-overeenkomstig-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-overeenkomstig-verwant" aria-label="Links in this document to definition: overeenkomstig verwant">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-overeenkomstig-verwant" aria-label="Permalink for definition: overeenkomstig verwant. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-overeenkomstig-verwant-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-overeenkomstig-specifieker" aria-label="Links in this document to definition: overeenkomstig specifieker">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-overeenkomstig-specifieker" aria-label="Permalink for definition: overeenkomstig specifieker. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-overeenkomstig-specifieker-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-overeenkomstig-generieker" aria-label="Links in this document to definition: overeenkomstig generieker">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-overeenkomstig-generieker" aria-label="Permalink for definition: overeenkomstig generieker. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-overeenkomstig-generieker-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-begrippenkader" aria-label="Links in this document to definition: begrippenkader">
@@ -2705,7 +3770,93 @@ ex2:Land a skos:Concept ;
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-    <a href="#ref-for-dfn-begrippenkader-1" title="§ 2.1.1 Begrippenlijst">§ 2.1.1 Begrippenlijst</a> 
+    <a href="#ref-for-dfn-begrippenkader-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
+  </li><li>
+    <a href="#ref-for-dfn-begrippenkader-2" title="§ 2.1.1 Begrippenlijst">§ 2.1.1 Begrippenlijst</a> 
+  </li><li>
+    <a href="#ref-for-dfn-begrippenkader-3" title="§ 2.2 Begrippenkader">§ 2.2 Begrippenkader</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-topbegrip" aria-label="Links in this document to definition: topbegrip">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-topbegrip" aria-label="Permalink for definition: topbegrip. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-topbegrip-1" title="§ 3.3.1 Specificatie Begrippenkader">§ 3.3.1 Specificatie Begrippenkader</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-behoort-tot-schema" aria-label="Links in this document to definition: behoort tot schema">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-behoort-tot-schema" aria-label="Permalink for definition: behoort tot schema. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-behoort-tot-schema-1" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-label" aria-label="Links in this document to definition: label">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-label" aria-label="Permalink for definition: label. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-label-1" title="§ 3.3.1 Specificatie Begrippenkader">§ 3.3.1 Specificatie Begrippenkader</a> 
+  </li><li>
+    <a href="#ref-for-dfn-label-2" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+  </li><li>
+    <a href="#ref-for-dfn-label-3" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
+  </li><li>
+    <a href="#ref-for-dfn-label-4" title="§ 3.3.4 Specificatie Collectie">§ 3.3.4 Specificatie Collectie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-label-5" title="§ 3.3.5 Specificatie GeordendeCollectie">§ 3.3.5 Specificatie GeordendeCollectie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-collectie" aria-label="Links in this document to definition: collectie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-collectie" aria-label="Permalink for definition: collectie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-collectie-1" title="§ 2.3 Collectie">§ 2.3 Collectie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-geordende-collectie" aria-label="Links in this document to definition: geordende collectie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-geordende-collectie" aria-label="Permalink for definition: geordende collectie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-geordende-collectie-1" title="§ 2.3 Collectie">§ 2.3 Collectie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bevat" aria-label="Links in this document to definition: bevat">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-bevat" aria-label="Permalink for definition: bevat. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-bevat-1" title="§ 3.3.4 Specificatie Collectie">§ 3.3.4 Specificatie Collectie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-bevat-2" title="§ 3.3.5 Specificatie GeordendeCollectie">§ 3.3.5 Specificatie GeordendeCollectie</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bron" aria-label="Links in this document to definition: bron">
@@ -2719,7 +3870,9 @@ ex2:Land a skos:Concept ;
     <li>
     <a href="#ref-for-dfn-bron-1" title="§ 2. Conceptuele beschrijving">§ 2. Conceptuele beschrijving</a> 
   </li><li>
-    <a href="#ref-for-dfn-bron-2" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
+    <a href="#ref-for-dfn-bron-2" title="§ 2.4 Bron">§ 2.4 Bron</a> 
+  </li><li>
+    <a href="#ref-for-dfn-bron-3" title="§ 3.3.2 Specificatie Begrip">§ 3.3.2 Specificatie Begrip</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-url" aria-label="Links in this document to definition: url">
@@ -2748,6 +3901,20 @@ ex2:Land a skos:Concept ;
     <a href="#ref-for-dfn-citaat-1" title="§ 2.4 Bron">§ 2.4 Bron</a> 
   </li><li>
     <a href="#ref-for-dfn-citaat-2" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-soort" aria-label="Links in this document to definition: soort">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-soort" aria-label="Permalink for definition: soort. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-soort-1" title="§ 2.4 Bron">§ 2.4 Bron</a> 
+  </li><li>
+    <a href="#ref-for-dfn-soort-2" title="§ 3.3.3 Specificatie Bron">§ 3.3.3 Specificatie Bron</a> 
   </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-upward-posting" aria-label="Links in this document to definition: upward posting">
