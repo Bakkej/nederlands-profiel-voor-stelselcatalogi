@@ -1,12 +1,21 @@
 # Inleiding
 
 ## Toepassingsgebied
-De voorliggende standaard richt zich op het beschrijven van begrippen in een begrippenkader. Dit maakt het mogelijk om:
-- binnen een organisatie alle begrippen op één plek te beheren door de verantwoordelijke voor een bepaald domein. Zoals begrippenkaders voor een bepaalde registratie of voor een (overheids)organisatie of sector zoals het begrippenkader voor de Basisregistratie Kadaster of Aqualex voor de waterschappen. 
-- interoperabele begrippencatalogi te maken, die naar elkaars begripsbeschrijvingen kunnen verwijzen en/of hergebruiken. Hiermee ontstaat een samenhangend stelsel van begrippencatogi, waarbij elke begrippencatalogus een samenhangend domein representeert. Door de interoperabele beschrijvingen is van alle beschreven begrippen altijd een eenduidige beschrijving vanuit de primair verantwoordelijke organisatie beschikbaar.  Voorbeelden zijn de begrippencatalogus van de basisregistraties, de begrippencatalogus voor het DSO en de begrippencatalogus voor het Zorgeloos Vastgoed afsprakenstelsel.
-- eenvoudige, herbruikbare catalogi te maken voor toepassingen zoals een termenlijst of index van gebruikte begrippen op webpagina's of in documenten.
+Door toepassing van de voorliggende standaard wordt informatie op webpagina's of in documenten en in databeschrijvingen doorzoekbaar op voorkeurstermen, alternatieve termen en gerelateerde termen, waardoor informatie beter vindbaar wordt. Door de interoperabele beschrijvingen is van alle beschreven begrippen altijd een eenduidige beschrijving vanuit de primair verantwoordelijke organisatie beschikbaar En last but not least is waar relevant altijd de rationale achter de beschrijving beschikbaar door de verwijzing naar de bron in wet- en regelgeving, standaarden, werkinstructies en afspraken. Dit zijn concrete stappen op weg naar een toegankelijke en transparante overheid. Daarom willen we het uiteindelijke profiel als aanbevolen standaard of als [[[PTOLU]]] standaard aanbieden aan het Forum Standaardisatie.
 
-Door toepassing van deze standaard worden alle informatie doorzoekbaar op voorkeurstermen, alternatieve termen en gerelateerde termen, waardoor informatie beter vindbaar wordt. Door de interoperabele beschrijvingen is van alle beschreven begrippen altijd een eenduidige beschrijving vanuit de primair verantwoordelijke organisatie beschikbaar En last but not least is waar relevant altijd de rationale achter de beschrijving beschikbaar door de verwijzing naar de bron in wet- en regelgeving, standaarden, werkinstructies en afspraken. Dit zijn concrete stappen op weg naar een toegankelijke en transparante overheid. Daarom willen we het uiteindelijke profiel als aanbevolen standaard of als [[[PTOLU]]] standaard aanbieden aan het Forum Standaardisatie.
+De standaard richt zich op het beschrijven van begrippen in een begrippenkader. Dit maakt het mogelijk om:
+- eenvoudige, herbruikbare catalogi te maken voor toepassingen zoals een termenlijst of index van gebruikte begrippen op webpagina's of in documenten.
+- binnen een organisatie alle begrippen op één plek te beheren door de verantwoordelijke voor een bepaald domein. Zoals begrippenkaders voor een bepaalde registratie of voor een (overheids)organisatie of sector zoals het begrippenkader voor de Basisregistratie Kadaster of Aqualex voor de waterschappen. 
+- interoperabele begrippencatalogi te maken, die naar elkaars begripsbeschrijvingen kunnen verwijzen en/of hergebruiken. Een begrippencatalogus is in dit kader een publicatie van een of meer samenhangende begrippenkaders. Hiermee ontstaat een samenhangend stelsel van begrippencatogi, waarbij elke begrippencatalogus een samenhangend domein representeert. Door de interoperabele beschrijvingen is van alle beschreven begrippen altijd een eenduidige beschrijving vanuit de primair verantwoordelijke organisatie beschikbaar.  Voorbeelden zijn de begrippencatalogus van de basisregistraties, de begrippencatalogus voor het DSO en de begrippencatalogus voor het Zorgeloos Vastgoed afsprakenstelsel.
+
+
+
+## Doelgroep
+Deze standaard is primair bedoeld voor analisten, informatiemanagers, informatiemodelleurs en -architecten. Er is niet veel extra kennis nodig om met behulp van de standaard een eenvoudige verklarende begrippenlijst of glossary te maken. Voor het maken van een samenhangende taxonomie of thesaurus is gedegen kennis van semantische standaarden (W3C en ISO) nodig. Daarnaast is deze standaard bedoeld voor mensen die verantwoordelijk zijn voor (web)content, registraties of (delen van) digitale stelsels. Voor deze groep biedt de standaard  handvatten en good practices voor het beschrijven en verbinden van de gebruikte begrippen. 
+
+Uiteindelijk is deze standaard bedoeld voor transparantie en duidelijkheid voor enerzijds ambtenaren die (overheids)informatie publiceren en/of besluiten formuleren en anderzijds voor mensen voor wie deze informatie en/of besluiten zijn bedoeld. Voor degenen die besluiten formuleren helpt het om de uit te voeren wet- en regelgeving, context en betekenis helder in beeld te houden. Voor burgers geeft het inzicht in context en betekenis. Beschrijving van de betekenis en context van begrippen is voor iedereen een eerste stap naar elkaar begrijpen. 
+
+## Rationale
 
 Iedere begripbeschrijving in een begrippenkader probeert de betekenis van dit begrip te "vangen" zoals in het betreffende domein wordt beoogd. Hiervoor hebben we enkele middelen:
 - De basis voor een begrip is de voorkeursterm waarmee we dit begrip duiden. Mogelijk is het begrip ook bekend onder andere alternatieve termen, die we hier kunnen verzamelen;
@@ -15,15 +24,7 @@ Iedere begripbeschrijving in een begrippenkader probeert de betekenis van dit be
 - We kunnen verwijzen naar een bron waar de betekenis van het begrip staat beschreven, zoals in wet- en regelgeving, standaarden, werkinstructies en afspraken;
 - We kunnen voorbeelden van een begrip te noemen.
 
-Deze middelen vullen elkaar aan: door in de beschrijving meerdere middelen te gebruiken ontstaat een beschrijving die de betekenis van een begrip optimaal "vangt".
-
-
-## Doelgroep
-Deze standaard is primair bedoeld voor analisten, informatiemanagers, informatiemodelleurs en -architecten. Er is niet veel extra kennis nodig om met behulp van de standaard een eenvoudige verklarende begrippenlijst of glossary te maken. Voor het maken van een samenhangende taxonomie of thesaurus is gedegen kennis van semantische standaarden (W3C en ISO) nodig. Daarnaast is deze standaard bedoeld voor mensen die verantwoordelijk zijn voor (web)content, registraties of (delen van) digitale stelsels. Voor deze groep biedt de standaard handvatten en good practices voor het beschrijven en verbinden van de gebruikte begrippen. 
-
-Uiteindelijk is deze standaard bedoeld voor transparantie en duidelijkheid voor enerzijds ambtenaren die (overheids)informatie publiceren en/of besluiten formuleren en anderzijds voor mensen voor wie deze informatie en/of besluiten zijn bedoeld. Voor degenen die besluiten formuleren helpt het om de uit te voeren wet- en regelgeving, context en betekenis helder in beeld te houden. Voor burgers geeft het inzicht in context en betekenis. Beschrijving van de betekenis en context van begrippen is voor iedereen een eerste stap naar elkaar begrijpen. 
-
-## Rationale
+Deze middelen vullen elkaar aan: door in de beschrijving meerdere middelen te gebruiken ontstaat een beschrijving die de betekenis van een begrip optimaal "vangt". Dit is het domein van taxonomieën en thesauri.
 
 Taxonomieën en thesauri zijn oorspronkelijk ontworpen voor informatieprofessionals die zijn opgeleid in indexeren en zoeken. Tegenwoordig is er vooral vraag naar vocabulaires die ongetrainde gebruikers helpen bij het intuïtief vinden van informatie en naar vocabulaires die redeneren door machines mogelijk maken. De ISO 25964 standaard voor thesauri maakt zoals ze zelf in de inleiding aangeeft de transitie die nodig is om compatibel te zijn met de digitale wereld van informatiemanagement. Daarbij gaat het om het zoeken en vinden van informatie in digitale registraties.
 
