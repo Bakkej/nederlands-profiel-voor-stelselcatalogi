@@ -445,7 +445,7 @@ De standaard kent een taalbinding waarmee een begrippenkader als Linked data kan
   }
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry"><div class="head">
      <h1 id="title" class="title">SBB - Standaard voor het beschrijven van begrippen</h1>
     
     <h2>
@@ -2720,7 +2720,7 @@ ex2:Land a skos:Concept
 <p>Het hergebruiken van begrippen is het opnemen van begrippen in verschillende begrippenkaders. In tegenstelling tot bij harmonisatie, waar twee losse sets van begrippen aan elkaar gerelateerd worden door extra relaties te leggen, wordt bij hergebruik één begrip aan verschillende begrippenkaders toegevoegd. In deze zin commiteer je volledig aan de beschrijving van het begrip uit een ander begrippenkader. Dit is afgebeeld in het volgende diagram.
 
       </p><figure id="fig-datastructuren-hergebruik-en-harmonisatie">
-        <img src="respec/media/hergebruik.png" alt="">
+        <img src="/respec/media/hergebruik.png" alt="">
         <figcaption><a class="self-link" href="#fig-datastructuren-hergebruik-en-harmonisatie">Figuur <bdi class="figno">5</bdi></a> <span class="fig-title">Datastructuren hergebruik en harmonisatie</span></figcaption>
       </figure>
     <p></p>
@@ -2830,8 +2830,12 @@ ex2:Land a skos:Concept ;
 </ul>
 <p>Een dergelijke versierelatie wordt ook vaak wel een "import" relatie genoemd.</p>
 </section><section id="c-thematische-bundeling-als-eenheid-van-beheer"><div class="header-wrapper"><h5 id="x5-5-2-3-c-thematische-bundeling-als-eenheid-van-beheer"><bdi class="secno">5.5.2.3 </bdi>C. (thematische) bundeling als eenheid van beheer</h5><a class="self-link" href="#c-thematische-bundeling-als-eenheid-van-beheer" aria-label="Permalink for Section 5.5.2.3"></a></div>
-
-
+<p>
+      </p><figure id="fig-diagram-toepassingsprofiel-skos-0">
+        <img src="/respec/media/skos-ap-nl.png" alt="">
+        <figcaption><a class="self-link" href="#fig-diagram-toepassingsprofiel-skos-0">Figuur <bdi class="figno">6</bdi></a> <span class="fig-title">Diagram: Toepassingsprofiel skos</span></figcaption>
+      </figure>
+    <p></p>
 <p>In dit model lopen relaties tussen begrippen altijd van het ene begrip naar het andere begrip. Stel dat er een relatie loopt van het begrip «Autobestuurder» naar het begrip «Auto», waarbij de beschrijving van het begrip «Auto» wordt bijgehouden in een andere beheer eenheid dan de beschrijving van het begrip «Autobestuurder». We weten dan niet direct welke versie van de begripsbeschrijving is gebruikt. Immers: onze basisprincipes stellen dat een relatie tussen onderwerpen loopt (en niet tussen gegevensobjecten).</p>
 <ul>
 <li>De relatie is: «Autobestuurder» <em>is gerelateerd aan</em> «Auto»</li>
