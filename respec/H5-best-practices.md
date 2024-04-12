@@ -332,7 +332,7 @@ Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hi
 
 #### A. Begripsbeschrijving als eenheid van beheer
 
-<!-- ![](respec/media/versiebeheer.begripsbeschrijving.drawio.png) -->
+![](/respec/media/versiebeheer.begripsbeschrijving.drawio.png "waaa")
 
 Versiebeheer op begripsbeschrijving gaat ervan uit dat er een gegevensobject per begrip in een begrippenkader wordt gemaakt en dat het beheer op dat niveau wordt gereregeld.
 Elke wijziging op een individuele begripsbeschrijving heeft geen impact op de andere begripsbeschrijvingen.
