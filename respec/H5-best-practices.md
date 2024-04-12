@@ -346,7 +346,7 @@ Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van d
 
 #### C. Begripsbeschrijving deel als eenheid van beheer
 
-<!-- ![](respec/media/versiebeheer.begripsbeschrijvingDeel.drawio.png) -->
+![](respec/media/versiebeheer.begripsbeschrijvingDeel.svg "weee")
 
 Versiebeheer op een deel van de complete begripsbeschrijving gaat er van uit dat bepaalde gegevens over een begrip tezamen beheerd worden. Ieder begrip heeft zo meerdere, complementaire, beschrijvingen. Deze beschrijvingen kunnen conform Variant A individueel beheerd, of conform Variant B als verzameling beheerd worden.
 
