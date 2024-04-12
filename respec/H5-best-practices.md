@@ -339,7 +339,7 @@ Elke wijziging op een individuele begripsbeschrijving heeft geen impact op de an
 
 #### B. Begrippenkaderbeschrijving als eenheid van beheer
 
-<!-- ![](respec/media/versiebeheer.begrippenkaderbeschrijving.drawio.png) -->
+![](respec/media/versiebeheer.begrippenkaderbeschrijving.svg "wiiii")
 
 Bij versiebeheer op begrippenenkaderbeschrijvingniveau zitten alle gegevensobjecten die horen bij de beschrijving van een begrippenkader onder de beheerset van dat begrippenkader.
 Wanneer een begripsbeschrijving wijzigt is er sprake van een nieuwe versie van de begrippenkaderbeschrijving.
