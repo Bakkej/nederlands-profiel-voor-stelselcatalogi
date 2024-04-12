@@ -322,7 +322,7 @@ De eenheid van beheer is het geheel van gegevensobjecten die als één gezamenli
 
 Het toepassen van de kernprincipes voor versiebeheer leidt tot het volgende model.
 
-![](/respec/media/versiebeheer.conceptueel.svg "woo")
+![](/respec/media/versiebeheer.conceptueel.png "woo")
 
 Omdat dit model op op veel verschillende manieren te gebruiken is schetsen we hier een aantal voor de hand liggende scenario's voor het inrichten van versiebeheer van begripsbeschrijvingen:
 
